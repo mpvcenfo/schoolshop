@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Forma de pago | SchoolShop</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style-h_f.css">
+    <link rel="stylesheet" type="text/css" href="css/forma-pago.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logotipo.png">
+        <nav>
+            <a href="home-encargado.html">Inicio</a>
+            <a href="shopping.html">Carrito de compras</a>
+            <a href="login.html" onclick="cerrarSesion()">Cerrar sesión</a>
+        </nav>
+        <div class="clearFix"></div>
+    </header>
+    <main>
+        <section id="formaPago">
+            <form id="frmFormaPago">
+                <h2>Forma de pago</h2>
+                <div class="campo">
+                    <label for="radio">Pago total</label>
+                    <input type="radio" name="formapago" value="total" checked>
+                </div>
+                <div class="campo">
+                    <label for="radio">Pago parcial</label>
+                    <input type="radio" name="formapago" value="parcial">
+                </div>
+                <div class="campo">
+                    <label for="radio">Reserva</label>
+                    <input type="radio" name="formapago" value="reserva">
+                </div>
+                <div class="campo">
+                    <label for="radio">Recargo a matrícula</label>
+                    <input type="radio" name="formapago" value="matricula">
+                </div>
+            </form>
+        </section>
+        <section id="continuar">
+            <button type="button" id="btnContinuar">Continuar</button>
+        </section>
+        <div class="clearFix"></div>
+    </main>
+    <footer>
+        <div id="menu">
+            <h2>School</h2>
+            <h3>Shop</h3>
+            <nav>
+                <a href="#">Registrar estudiante</a>
+                <a href="#">Carrito de compras</a>
+                <a href="login.html">Cerrar sesión</a>
+            </nav>
+        </div>
+        <div id="contactos">
+            <h1>Contactenos</h1>
+            <span class="fa fa-phone"></span>
+            <h2>+506 2589-5562</h2>
+            <span class="fa fa-envelope-o"></span>
+            <h3>info@schoolshop.com</h3>
+        </div>
+        <div id="redes">
+            <h2>Find us</h2>
+            <span class="fa fa-facebook-official fa-3x"></span>
+            <span class="fa fa-google-plus-official fa-3x"></span>
+            <span class="fa fa-map fa-3x"></span>
+        </div>
+        <div class="clearFix"></div>
+    </footer>
+    <script src="js/logica-comun.js"></script>
+    <script src="js/logica-forma-pago.js"></script>
+    <script src="js/controlador-forma-pago.js"></script>
+</body>
+
+</html>

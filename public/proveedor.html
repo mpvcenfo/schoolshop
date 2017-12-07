@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proveedor</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/tiphography.css">
+  <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/grid.css">
+  <link rel="stylesheet" href="./css/style-home.css">
+ <link rel="stylesheet" href="css/proveedor.css">
+<link rel="shortcut icon" href="imgs/logoSchoolShop.png" type="image/x-icon">
+
+</head>
+<body> 
+    <header class="column column-2 menu">
+        
+        <section class="row" >
+            <div class="column column-5"> 
+                <img src="imgs/logoSchoolShop_Black.png" alt="Logo School Shop" width="100%">
+            </div>
+            <div  class="column column-7 slogan">
+                <h2>School</h2>
+                <h3>Shop</h3>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="column nav">
+                <nav>
+                    <a href="#">Mi Institución</a>
+                    <a href="home-director.html">Registrar Personal</a>
+                    <a href="listar-personal.html">Listar Personal</a>
+                    <a href="#">Registrar proveedor</a>
+                    <a href="cursos.html">Cursos Extras</a>
+                    <a href="#">Reporte</a>
+                    <a href="login.html" onclick="cerrarSesion()">Cerrar sesión</a>
+
+                </nav>
+            </div>
+        </section>
+      
+
+    </header>   
+
+    
+    <section class="column column-10">
+        <div class='row menutop'>
+            <nav>         
+                <a href="#">Ir a la tienda <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+                <a href="login.html">Cerrar sesión</a>
+                
+            </nav>
+        </div>    
+
+        <div class=" row main">
+                
+               <form    id="formularioProveedor"  class="rProveedor-content column column-10">
+                  
+   
+                  
+                   <div id="btnModDes" class="ocultarAgregar">
+                   <span id="btneditar" class="fa fa-pencil botonEditar"></span>
+                 
+                 </div>
+                            <div class="column column-6">
+                     
+                     <span id="Titulo" class="titulo"> Proveedor</span>
+                     <span id="btnbasurero" class="fa fa-trash botonDeshabilitar"></span>
+                             <div class="clearFix"></div>
+                                    <!--   <span class="sub">Categorias </span> -->  
+                    
+                            <div class="inputs  colunm column-4">
+                          <h3>Cédula Jurida</h3>
+                          <input type="text" name="" id="inputpCedula">
+                          <h3>Nombre</h3>
+                          <input type="text" name="" id="inputpNombre">
+                          <h3>Teléfono</h3>
+                          <input type="number" name="" id="inputpTelefono">
+                          <h3>Correo</h3>
+                          <input type="email" name="" id="inputpCorreo">
+                          <h3>Encargado</h3>
+                          <input type="text" name="" id="inputpEncargodo">
+                          
+                          </div>
+                          <div id="casillas" class="checkbox">
+                         
+                            
+   
+                      
+   
+                         <input type="checkbox" name="Bolsos " value ="Bolsos" id="Bolsos">
+                               
+                         <input type="checkbox" name="Libros" value="Libros" id="Libros" >
+                         
+                         <input type="checkbox" name="Uniformes de fisica" value="Uniformes de fisica" id="Uniformesdefisica">
+                          
+                         <input type="checkbox" name="Arte" value="Arte" id="Arte" >
+                        
+                         <input type="checkbox" name="Cuadernos" value="cuadernos" id="Cuadernos">
+                       
+                        
+                         <input type="checkbox" name="Uniformes Formales " id="UniformesFormales"  value="Uniformes Formales" > 
+                         
+                         
+                          <input type="checkbox" name="Herramientas "  id="Herramientas" value="Herramientas"> 
+                             
+   
+                              </div>   
+   
+   
+   
+                              <div class="categorias">
+                                <h3  for="">Bolsos<h3>
+                                <h3  for="" >Libros<h3>
+                                 <h3  for="">Uniformes de fisica<h3>
+                                  <h3 for="">Arte<h3>
+                                  <h3   for="">Cuadernos<h3>
+                                  <h3    for="">Uniformes Formales<h3>
+                                  <h3  >Herramientas<h3>
+                              </div>
+   
+   
+                            </div>
+   
+   
+                       <div class="clearFix"></div>
+   
+   
+   
+                    <div id="botones">
+                 <input id="btnCerrar" class="btnCerrar" type="button" value="Cancelar">
+                   
+                 <input id="btnRegistrarProveedor" class="btnAbrir" type="button" value="Guardar">
+               </div>
+   
+               </form>
+   
+        </div>
+
+        <div class="modal" id="modal" >
+            <div class="modal-containeer">
+                <p>Seleccione  una categoría y llene los campos en rojo</p>
+                <button id="btnAceptar">Aceptar</button>
+           </div>
+           </div>
+
+           <div class="modal" id="modalwarning" >
+            <div class="modal-containeer">
+                <p>¿Seguro que desea deshabilitar?</p>
+                <button id="btndeshabilitar">Aceptar</button>
+                <button id="btnCancelar">Cancelar</button>
+                
+           </div>
+           </div>
+    </section>
+
+    <script src="js/logicaProveedores.js"></script>
+    <script src="js/controladorRegistrarProvedor.js"></script>    
+</body>
+</html>

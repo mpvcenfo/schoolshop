@@ -1,0 +1,97 @@
+/*TITULO */
+
+
+
+
+.filtrar {
+margin-top: 30px;
+margin-bottom: 30px;
+margin-left: 800px;
+ 
+}
+
+
+
+#btnFiltrar:hover{
+
+    cursor: pointer;
+}
+
+
+#titulo h2{
+    font-size: 28px;
+    text-align: center;
+    margin-top: 150px:;
+     
+
+
+}
+
+
+
+
+/* FIN TITULO */
+
+/*INICIO TABLA*/
+
+#tablaEstudiante{
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+
+#tablaEstudiante  tr:nth-child(even) {
+    background-color: rgb(194, 245, 128);
+}
+#tablaEstudiante tr:nth-child(odd) {
+    background-color: rgb(169, 216, 107);
+}
+#tablaEstudiante th {
+    color: black;
+    background-color: #ff5433;
+}
+
+table,th,td  {
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+.colConsecutivo{
+    width: 15px;
+}
+
+.colidentificacion{
+    width: 100px;
+}
+
+.colNombre{
+    width: 200px;
+}
+
+.colNivel{
+    width: 80px;
+}
+
+.colSeccion{
+    width: 80px;
+
+}
+
+/*FIN TABLA*/
+
+
+/*inicio formulario*/
+
+/* DivPrincipal, este esta creado en HTML a mano, es donde guarda todos los cards */
+#tablaContainer{
+    height: 800px;
+    overflow: auto;
+    margin-bottom: 10px;
+    padding-left: 65px;
+    margin: auto;
+}
+

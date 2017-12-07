@@ -1,0 +1,12 @@
+#btnSeleccionarImagen{
+    background: rgb(51, 141, 177);
+    border: 2px solid #34495e;
+    border-radius: 5px; 
+    color: #fff;
+    padding: 5px 5px;
+  }
+  
+  #btnSeleccionarImagen:hover{
+    background: #4d6379;
+    cursor: pointer;
+  }

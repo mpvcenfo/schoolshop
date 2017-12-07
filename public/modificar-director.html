@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Modificar director</title>
+	<link rel="icon" href="img/icon.png">
+	<link rel="stylesheet"  href="css/reset.css">
+	<link rel="stylesheet"  href="css/modificar-director.css">
+	<link rel="stylesheet"  href="css/style-h_f.css ">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<Header>
+	
+
+		<img src="img/logotipo.png">
+
+		<nav>
+			<a href="crearInstitucion.html">Registrar Institución</a>
+			<a href="registrar-director.html">Registrar Director</a>
+			<a href="#">Reporte</a>
+			<a href="login.html" onclick="cerrarSesion()">Cerrar sesión</a>
+
+		</nav>
+		<div class="clearFix"></div>
+
+
+	</Header>
+
+	<main>
+
+
+		<div id="registrarContainer">
+			
+			<form id="formDirector">
+				
+				<span id="formTitulo">Director</span>
+			<div id="btnModDes" class="ocultarRegistro"> 	
+
+				<span id="btnEdit" class="fa fa-pencil botonEditar"></span>
+				<span id="btnDelete" class="fa fa-trash botonDeshabilitar"></span>
+			</div>
+
+			<div class="formImagen">
+				<img  id="vista" src="#" alt="Maximo 0.6 mb">
+				<input type="file" id="fImg"  accept="image/*">
+			</div>
+			<div>
+				<input type="hidden" id="idDirector">
+			</div>
+
+			<div>
+				<label for="txtNombre">Nombre</label>
+				<input type="text" id="txtNombre">
+			</div>
+
+
+			<div></div>
+
+			</form>
+
+
+
+
+
+
+		</div>
+	
+	
+		
+		<div class="cardsHome">
+            <h3>Director</h3>
+            	<div id='imagenCard'>
+
+            	<img src="">	
+            		
+               	 <span class='fa fa-calendar fa-5x calendarIcon'></span>
+            	</div>
+            <p id='contenido'>Entra aqui y ayuda a que puedan retirar sus articulos escolares y medir sus uniformes generando las citas.</p>
+  		</div>
+  
+
+
+				
+
+
+
+		<div class="clearFix"></div>
+	</main>
+
+	<footer>
+
+			<div id="menu">
+			<h2>School</h2>
+			<h3>Shop</h3>
+
+			<nav>
+                    <a href="#">Generar citas</a>
+                    <a href="#">Redimir Articulos</a>
+                    <a href="#">Reporte</a>
+                    <a href="login.html" onclick="cerrarSesion()">Cerrar sesión</a>
+        
+            </nav>
+
+		</div>
+
+		<div id="contactos">
+
+			<h1>Contactenos</h1>
+
+			<span class="fa fa-phone"></span>
+			<h2>+506 2589-5562</h2>
+			<span class="fa fa-envelope-o"></span>
+			<h3>info@schoolshop.com</h3>
+
+		</div>
+
+		<div id="redes">
+			<h2>Find us</h2>
+			<span class="fa fa-facebook-official fa-3x"></span>
+			<span class="fa fa-google-plus-official fa-3x"></span>
+			<span class="fa fa-map fa-3x"></span>
+
+		</div>
+
+
+
+		<div class="clearFix"></div>
+
+
+
+
+
+	</footer>
+	<script src="js/logica-comun.js"></script>
+	<script src="js/logica-registrar-director.js"></script>
+    <script src="js/controlador-registrar-director.js"></script>
+</body>
+</html>
+

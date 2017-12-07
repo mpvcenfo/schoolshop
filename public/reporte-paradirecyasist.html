@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="imgs/logoSchoolShop.png" type="image/x-icon">
+    <title>Reporte de estudiantes (profesor)</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/reporte-paradirecyasist.css">
+    <link rel="stylesheet" href="./css/tiphography.css">
+    <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style-home.css">
+</head>
+<body>
+    <header class="column column-2 menu">
+        
+        <section class="row" >
+            <div class="column column-5"> 
+                <img src="imgs/logoSchoolShop_Black.png" alt="Logo School Shop" width="100%">
+            </div>
+            <div  class="column column-7 slogan">
+                <h2>School</h2>
+                <h3>Shop</h3>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="column nav">
+                <nav>
+
+                </nav>
+            </div>
+        </section>
+      
+
+    </header>
+
+    <section class="column column-10">
+        <div class='row menutop'>
+            <nav>
+                <a href="#">Ir a la tienda <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+                <a href="#">Cerrar sesión</a>
+                
+            </nav>
+        </div>
+
+        <div class='row main'>
+
+            <div class="filtrar">
+                <h2>Filtrar por:</h2>
+                <div id="grado">    
+                <label for="txtNivel">Nivel</label>
+                <select id="txtNivel">
+                    <option value="">--Selecionar--</option>
+                    <option value="Primero">Primero</option>
+                    <option value="Segundo">Segundo</option>
+                    <option value="Tercero">Tercero</option>
+                    <option value="Cuarto">Cuarto</option>
+                    <option value="Quinto">Quinto</option>
+                    <option value="Sexto">Sexto</option>
+                    
+                </select>
+                </div>
+
+                <div id="grupo">
+                <label for="txtSeccion">Sección</label>
+                <select id="txtSeccion">
+                    <option value="">--Selecionar--</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    
+                </select>
+                </div>
+
+
+
+
+
+                <button  type="button" id="btnFiltrar">Filtrar</button>
+                <div class="clearFix"></div>
+            </div>
+            
+
+
+            <div id="titulo">
+                <h2>Estudiantes</h2>
+            </div>
+
+            <section id="tablaContainer">
+                <table id="tablaEstudiante">
+                    <thead>
+                        <th class="colConsecutivo">#</th>
+                        <th class="colIdentificacion">Identificación</th>
+                        <th class="colNombre">Nombre</th>
+                        <th class="colNivel">Nivel</th>
+                        <th class="colSeccion">Sección</th>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>    
+                </table>
+            </section>
+                    
+
+
+
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="column column-12">
+            <div class="column column-4"></div>
+            <div class="column column-4"></div>
+            <div class="column column-4"></div>
+        </div>
+    </footer>
+
+    <script src="js/logica-comun.js"></script>
+</body>
+</html> 

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Citas</title>
+	<link rel="icon" href="img/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style-h_f.css">
+    <link rel="stylesheet" type="text/css" href="css/Citas.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header>
+			
+			<a href="home-asistente.html"> <img src="img/logotipo.png"></a>
+
+			<nav>
+				<a href="home-asistente.html">Generar citas</a>
+				<a href="redimir.html">Redimir Articulos</a>
+				<a href="reporteArticuloAgotado.html">Reporte</a>
+				<a href="login.html" onclick="cerrarSesion()">Cerrar sesión</a>
+
+			</nav>
+			<div class="clearFix"></div>
+		</header>
+
+		<main>
+			<div id="tituloYAgregar">
+				<h1 id="tituloP">Citas</h1>
+				<span id="btnAbrirModal"  class="fa fa-plus-square fa-2x"></span>
+			</div>
+
+			<section id="tablaContainer">
+				<table id="tablaCitas">
+					<thead>
+						<th class="colEdit">Cedula</th>
+						<th class="colNombre">Nombre</th>
+						<th class="colCorreo">Correo</th>
+						<th class="colFechaPedido">Fecha pedido</th>
+						<th class="colFechaProgramada">Fecha programada</th>
+						<th class="colCita"><span class="fa fa-clock-o"> </th>
+					</thead>
+
+					<tbody>
+
+					</tbody>	
+				</table>
+			</section>
+						
+			<div id="modal" class="ocultarRegistro">
+				<div id="registarContainer" >
+						<form id="formCita">
+							<span id="formTitulo" >Registrar Cita</span>
+							<!-- <div id="btnModDes" class="ocultarRegistro">
+								<span id="btnEdit" class="fa fa-pencil botonEditar"></span>
+								<span id="btnDelete" class="fa fa-trash botonDeshabilitar"></span>
+							</div> -->
+							
+							<div class='formImagen' >
+									<img id="vista" src="img/calendar.png" alt="Imagen...">
+								
+								</div>
+							<div>
+								<label for="idCita" >Cedula</label>
+								<output type="text" class="inputCorto" id="idCita" disabled>
+							</div>
+							<div >
+								<label for="txtNombre">Nombre</label>
+								<output type="text" class="inputCorto" id="txtNombre" placeholder="">
+							</div>
+
+							<div>
+								<label for="dateFechaProgramada">Fecha Programada</label>
+								<input  type="datetime-local" class="inputCorto" id="dateFechaProgramada" placeholder="">
+							</div>
+	
+							
+	
+						</form>
+						<div id="botones">
+							<input id="btnRegistrar" class="btnFormulario" type="button" value="Registrar">
+							<input id="btnCancelar" class="btnFormulario" type="button" value="Cancelar">
+						</div>
+				</div>
+			</div>
+				
+		</main>
+				
+				
+		<footer>
+			<div id="menu">
+				<h2>School</h2>
+				<h3>Shop</h3>
+				
+				<nav>
+						<a href="home-asistente.html">Generar citas</a>
+						<a href="redimir.html">Redimir Articulos</a>
+						<a href="#">Reporte</a>
+						<a href="login.html" onclick="cerrarSesion()">Cerrar sesión</a>
+			
+				</nav>
+	
+			</div>
+	
+			<div id="contactos">
+	
+				<h1>Contactenos</h1>
+	
+				<span class="fa fa-phone"></span>
+				<h2>+506 2589-5562</h2>
+				<span class="fa fa-envelope-o"></span>
+				<h3>info@schoolshop.com</h3>
+	
+			</div>
+	
+			<div id="redes">
+				<h2>Find us</h2>
+				<span class="fa fa-facebook-official  fa-3x"></span>
+				<span class="fa fa-google-plus-official fa-3x"></span>
+				<span class="fa fa-map fa-3x"></span>
+	
+			</div>
+	
+	
+	
+			<div class="clearFix"></div>
+		</footer>
+		<script src="js/logica-comun.js"></script>
+		<script src="js/logica-Citas.js"></script>
+		<script src="js/controlador-Citas.js"></script>
+        
+
+
+
+	
+
+
+	</body>
+</html>

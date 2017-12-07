@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Listar encargado</title>
+	<link rel="icon" href="img/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style-h_f.css">
+	<link rel="stylesheet" type="text/css" href="css/registrar-encargado.css">
+    <link rel="stylesheet" type="text/css" href="css/listar-encargados.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header>
+			
+			<img src="img/logotipo.png">
+
+			<nav>
+				<a href="#">Generar citas</a>
+				<a href="#">Redimir Articulos</a>
+				<a href="#">Reporte</a>
+				<a href="login.html" onclick="cerrarSesion()">Cerrar sesión</a>
+
+			</nav>
+			<div class="clearFix"></div>
+		</header>
+
+<main>
+
+	<section class="nuevoencargado ocultar" id="seccion">
+			<div id="regis">
+			<form class="Registrar">
+				<h2>Registrar  encargado de estudiante</h2>
+
+
+<label for="txtIdentificacion">Número de identificación</label>
+				<input type="number" id="txtIdentificacion">
+
+				<div id="nombreUno">
+						<label for="txtNombre">Primer nombre</label>
+						<input type="text" id="txtNombre">
+					</div>
+					
+					<div id="nombreDos">
+						<label for="txtSegundoNombre">Segundo nombre</label>
+						<input type="text" id="txtSegundoNombre">
+					</div>
+
+					<div class="clearFix"></div>	
+
+				<div id="apellidoUno">
+						<label for="txtApellido">Primer apellido</label>
+						<input type="text" id="txtApellido">
+					</div>
+
+					<div id="apellidoDos">
+						<label for="txtSegundoApellido">Segundo apellido</label>
+						<input type="text" id="txtSegundoApellido">
+				</div>
+
+					
+					<div class="clearFix"></div>
+
+				<label for="txtFechaNacimiento">Fecha de nacimiento</label>
+				<input type="date" id="txtFechaNacimiento">
+
+				<label for="txtEstadoCivil">Estado civil</label>
+				<select id="txtEstadoCivil">
+						<option value="">--Seleccionar--</option>
+						<option value="Soltero">Soltero</option>
+						<option value="Union libre">Unión libre</option>
+						<option value="Casado">Casado</option>
+						<option value="Divorciado">Divorciado</option>
+						<option value="viudo">Viudo</option>
+				</select>
+
+			<div id="gender">
+				<label for="txtgenero">Género</label>
+				<input type="radio" name="genero" value="Masculino" checked>Masculino
+				<input type="radio" name="genero" value="Femenino">Femenino
+			</div>
+
+				<label for="txtTelefono">Número de teléfono</label>
+				<input type="textr" id="txtTelefono">
+
+				<label for="txtCorreo">Correo electrónico</label>
+				<input type="email" id="txtCorreo">
+
+				<label for="txtDireccion">Dirección de residencia</label>
+				<input type="text" id="txtDireccion">
+
+				<div id="parentesco">
+					<label for="txtParentesco">Parentesco</label>
+					<select id="txtParentesco">
+						<option value="">--Selecionar--</option>
+						<option value="padre">Padre</option>
+						<option value="madre">Madre</option>
+						<option value="abuelo">Abuelo</option>
+						<option value="abuela">Abuela</option>
+						<option value="tio">Tío</option>
+						<option value="tia">Tía</option>
+						<option value="hermano">Hermano</option>
+						<option value="hermana">Hermana</option>
+						<option value="otro">Otro</option>
+					</select>
+				</div>
+
+				
+
+				
+				<div class="clearFix"></div>
+							
+							
+				<div class="centrar-botones">				
+				<button class ="btnFormulario" type="button" id="btnModificar">Modificar</button>
+
+				<a href="listar-encargados.html"><button class ="btnFormulario" type="button" id="btnCancelar">Cancelar</button></a>
+
+					<span id="btnDelete" class="fa fa-trash botonDeshabilitar"></span>
+				
+				
+				</div>
+
+
+			</form>
+			
+		</section>
+
+
+
+		<div class="clearFix"></div>
+
+		<section id="listar">
+
+			<div id="tituloYAgregar">
+				<h1 id="tituloP">Encargado del estudiante</h1>
+			</div>
+
+				<section id ="cardsEncargados"></section>				
+
+			</section>
+			
+				
+				
+</main>
+				
+				
+		<footer>
+			<div id="menu">
+				<h2>School</h2>
+				<h3>Shop</h3>
+				
+				<nav>
+						<a href="#">Generar citas</a>
+						<a href="#">Redimir Articulos</a>
+						<a href="#">Reporte</a>
+						<a href="login.html" onclick="cerrarSesion()">Cerrar sesión</a>
+			
+				</nav>
+	
+			</div>
+	
+			<div id="contactos">
+	
+				<h1>Contactenos</h1>
+	
+				<span class="fa fa-phone"></span>
+				<h2>+506 2589-5562</h2>
+				<span class="fa fa-envelope-o"></span>
+				<h3>info@schoolshop.com</h3>
+	
+			</div>
+	
+			<div id="redes">
+				<h2>Find us</h2>
+				<span class="fa fa-facebook-official  fa-3x"></span>
+				<span class="fa fa-google-plus-official fa-3x"></span>
+				<span class="fa fa-map fa-3x"></span>
+	
+			</div>
+	
+	
+	
+			<div class="clearFix"></div>
+		</footer>
+		<script src="js/logica-comun.js"></script>
+		<script src="js/logica-registrar-encargado.js"></script>
+		<script src="js/controlador-listar-encargado.js"></script>
+        
+	</body>
+</html>

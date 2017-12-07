@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>School Shop | Registrar Encargado</title>
+	<link rel="shortcut icon" href="imgs/logoSchoolShop.png" type="image/x-icon">
+	
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/tiphography.css">
+    <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/grid.css">
+	<link rel="stylesheet" href="./css/style-home.css">
+	<link rel="stylesheet"  href="css/registrar-encargado.css">
+
+</head>
+<body>
+	<header class="column column-2 menu">
+			
+			<section class="row" >
+				<div class="column column-5"> 
+					<img src="imgs/logoSchoolShop_Black.png" alt="Logo School Shop" width="100%">
+				</div>
+				<div  class="column column-7 slogan">
+					<h2>School</h2>
+					<h3>Shop</h3>
+				</div>
+			</section>
+	
+			<section class="row">
+				<div class="column nav">
+					<nav>
+	
+					</nav>
+				</div>
+			</section>
+			
+	
+		</header>
+		
+
+<section class="column column-10">
+		<div class='row menutop'>             <i id="return" class="fa fa-arrow-circle-o-left fa-2x" aria-hidden="true"></i>
+				<nav>
+					<a href="#">Ir a la tienda <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+					<a href="login.html">Cerrar sesión</a>
+					
+				</nav>
+			</div>
+	
+			<div class='row main'>
+			 
+					<section class="nuevoencargado">
+							<div id="regis">
+							<form class="Registrar">
+								<h2>Registrar  encargado de estudiante</h2>
+				
+				
+								<label for="txtIdentificacion">Número de identificación</label>
+								<input type="number" id="txtIdentificacion">
+				
+								<div id="nombreUno">
+										<label for="txtNombre">Primer nombre</label>
+										<input type="text" id="txtNombre">
+									</div>
+									
+									<div id="nombreDos">
+										<label for="txtSegundoNombre">Segundo nombre</label>
+										<input type="text" id="txtSegundoNombre">
+									</div>
+				
+									<div class="clearFix"></div>	
+				
+								<div id="apellidoUno">
+										<label for="txtApellido">Primer apellido</label>
+										<input type="text" id="txtApellido">
+									</div>
+				
+									<div id="apellidoDos">
+										<label for="txtSegundoApellido">Segundo apellido</label>
+										<input type="text" id="txtSegundoApellido">
+								</div>
+				
+									
+									<div class="clearFix"></div>
+				
+								<label for="txtFechaNacimiento">Fecha de nacimiento</label>
+								<input type="date" id="txtFechaNacimiento">
+				
+								<label for="txtEstadoCivil">Estado civil</label>
+								<select id="txtEstadoCivil">
+										<option value="">--Seleccionar--</option>
+										<option value="Soltero">Soltero</option>
+										<option value="Union libre">Unión libre</option>
+										<option value="Casado">Casado</option>
+										<option value="Divorciado">Divorciado</option>
+										<option value="viudo">Viudo</option>
+								</select>
+				
+							<div id="gender">
+								<label for="txtgenero">Género</label>
+								<input type="radio" name="genero" value="Masculino" checked>Masculino
+								<input type="radio" name="genero" value="Femenino">Femenino
+							</div>
+				
+								<label for="txtTelefono">Número de teléfono</label>
+								<input type="textr" id="txtTelefono">
+				
+								<label for="txtCorreo">Correo electrónico</label>
+								<input type="email" id="txtCorreo">
+				
+								<label for="txtDireccion">Dirección de residencia</label>
+								<input type="text" id="txtDireccion">
+				
+								<div id="parentesco">
+									<label for="txtParentesco">Parentesco</label>
+									<select id="txtParentesco">
+										<option value="">--Selecionar--</option>
+										<option value="padre">Padre</option>
+										<option value="madre">Madre</option>
+										<option value="abuelo">Abuelo</option>
+										<option value="abuela">Abuela</option>
+										<option value="tio">Tío</option>
+										<option value="tia">Tía</option>
+										<option value="hermano">Hermano</option>
+										<option value="hermana">Hermana</option>
+										<option value="otro">Otro</option>
+									</select>
+								</div>
+				
+								
+				
+							</div>		
+				
+								
+								<div class="clearFix"></div>
+											
+								<button class="btnFormulario" type="button" id="btnRegistrar">Registrar</button>
+				
+								<a href="#"><button class="btnFormulario" type="button" id="btnCancelar">Cancelar</button></a>
+				
+				
+							</form>
+							
+						</section>
+					
+					
+
+
+						
+		<div class="modal" id="modal" >
+				<div class="modal-containeer">
+					<p>Por favor llene los campos en rojo</p>
+					<button id="btnAceptar">Aceptar</button>
+			   </div>
+			   </div>
+	
+		
+	
+			   <div class="modalfeedback" id="feedback" >
+					<div class="modalfeedback-containeer">
+						<p>Se registro correctamente el encargado</p>
+						<button id="ok" class="ok">Ok</button>
+				   </div>
+				   </div>
+			 </div>
+			</div>
+		</section>
+		 
+	
+    	
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+   
+	<script src="js/logica-comun.js"></script>
+	<script src="js/logica-registrar-encargado.js"></script>
+    <script src="js/controlador-registrar-encargado.js"></script>
+</body>
+</html>
+

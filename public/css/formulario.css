@@ -1,0 +1,169 @@
+
+.formulario{
+    font-family: 'Montserrat';
+    padding-left: 50px;
+}
+#tituloYAgregar{
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 6px;
+    width: 1100px;}
+
+    #tituloP{
+        font-size: 25px;
+        display:inline-block; 
+        color: rgb(255, 255, 255);}
+
+    #tituloYAgregar span {
+         font-size: 20px;}
+
+
+         .titulo{
+            font-size: 22px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+/* clases generales*/
+.error{
+    border: 2px solid #e74c3c
+}
+.btnAbrir{
+  border:1px solid black;
+    border-radius: 5px;
+    background: rgb(5, 135, 137);
+
+    padding: 8px;
+    width: 120px;
+    margin-top: 70px;
+    font-weight: bold;
+    margin-right:60px;
+}
+.btnAbrir:hover{
+	   cursor: pointer;
+    box-shadow: 1px 1px 1px  black;
+    color:#fff;
+  }
+.texto{
+ margin-top:20px;
+}
+.texto input,h3{
+ margin-top:20px;
+
+}
+.texto textarea{
+	 margin-top:20px;
+
+}
+#txtfiltro{
+	text-align: right;
+}
+
+.main{
+	    background: rgba(161, 124, 49, 0.301);
+
+}
+table{
+	width: 400px;
+}
+table tr {
+		width: 200px;
+
+}
+.colCodigo{
+	width: 100px;
+}
+.colNombre{
+	width: 100px;
+}
+.ocultar{
+    display: none;
+}
+
+.modal{
+    animation-name: seleccione;
+    animation-duration: 0.4s;
+    background-color: rgba(0, 0, 0, 0.37);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;} 
+     
+    @keyframes seleccione {
+        from {opacity: 0} 
+        to {opacity: 1}}
+
+    .modal-containeer{
+        text-align: center;
+        top: 260px;
+        left: 615px;
+        position: fixed;
+        width: 300px;
+        border: 6px solid rgb(51, 39, 29);
+        padding: 26px;
+        align-content: center;
+        font-size: 24px;
+        font-weight: 500;
+        background: rgba(134, 47, 16, 0.77);
+        border-radius: 10px;}
+
+    #btnAceptar{
+      color: rgb(1, 18, 19);
+      background: rgb(143, 136, 122);
+      border-radius: 5px;
+      border: 0px;
+      padding: 10px;
+     width: 90px;
+     font-weight: 800;
+     margin-top: 30px;
+    display: inline-block; }
+
+       #btnAceptar:hover{
+        cursor: pointer;
+        background: rgb(82, 77, 69);
+        color: #fff;}
+.botonDeshabilitar{
+
+        color:#fff;
+    background: #c0392b;
+    padding: 5px;
+    border-radius: 5px;}
+
+
+        .botonEditar:hover, .botonDeshabilitar:hover{
+            cursor: pointer;}
+        
+#btndeshabilitar{
+    color: rgb(1, 18, 19);
+    background:white;
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px;
+   width: 90px;
+   font-weight: 800;
+   margin-top: 30px;
+  display: inline-block;}
+
+        #btndeshabilitar:hover{
+            cursor: pointer;
+            color: rgb(187, 72, 43);}
+        
+           
+           
+#btncerrar{
+    color: rgb(1, 18, 19);
+    background: rgb(143, 136, 122);
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px;
+    width: 90px;
+    font-weight: 800;
+    margin-top: 30px;
+    display: inline-block; }
+          
+     #btncerrar:hover{
+     cursor: pointer;
+     background: rgb(82, 77, 69);
+    color: #fff;}
+   

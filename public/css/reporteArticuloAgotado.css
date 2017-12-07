@@ -1,0 +1,99 @@
+/*TITULO Y BOTON*/
+
+#tituloYAgregar{
+    background-color: rgba(0, 0, 0, 0.212);
+    padding: 15px;
+
+}
+
+#tituloP{
+    font-size: 28px;
+    display:inline-block; 
+    color: rgb(28, 109, 145);
+}
+
+/* FIN TITULO Y BOTON*/
+
+/*INICIO TABLA*/
+
+#tablaArticulos{
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+
+#tablaArticulos{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+
+
+#tablaArticulos  tr:nth-child(even) {
+    background-color: rgb(165, 134, 109);
+}
+#tablaArticulos tr:nth-child(odd) {
+    background-color: rgb(125, 101, 82);
+}
+#tablaArticulos th {
+    color: white;
+    background-color: rgb(199, 72, 28);
+}
+#tablaArticulos tr {
+    font-weight: 500;
+}
+
+table,th,td  {
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left: 10px;
+    text-align: left;
+}
+.colCount th{
+    width: 5px;
+    text-align: center;
+}
+
+.colEdit{
+    width: 52px;
+}
+
+.colNombre{
+    width: 200px;
+}
+
+.colDescri{
+    width: 400px;
+}
+
+/*FIN TABLA*/
+
+
+/*inicio formulario*/
+
+/* DivPrincipal, este esta creado en HTML a mano, es donde guarda todos los cards */
+#tablaContainer{
+    height: 600px;
+    overflow: auto;
+    margin-bottom: 10px;
+    padding-left: 65px;
+    margin: auto;
+}
+
+#descargar{
+    color: 	rgb(227, 215, 193);
+    font-size: 22px;
+    background: black;
+    padding: 5px;
+    border-radius: 5px;
+    float: right;
+}
+
+#descargar:hover{
+    cursor: pointer;
+    color: 	black;
+    background: rgb(5, 135, 137);
+}
+

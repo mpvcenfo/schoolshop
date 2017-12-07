@@ -1,0 +1,398 @@
+
+/*inicio estilos header Articulos*/
+
+/*inicia estilos del header*/
+
+#tituloYAgregar{
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 6px;
+    position: fixed;
+    width: 1254px;
+
+}
+
+#tituloP{
+    font-size: 28px;
+    display:inline-block; 
+    color: rgb(255, 255, 255);
+}
+
+#btnAbrirModal{
+    color: rgb(255, 255, 255);
+    float: right;
+   
+}
+
+#btnAbrirModal:hover{
+    cursor: pointer;
+    color: rgb(0, 179, 255);
+   
+}
+
+
+#btnAgregar{
+    color: rgb(255, 255, 255);
+    float: right;
+    font-size: 20px;}
+
+  #btnAgregar:hover{
+    cursor: pointer;
+    color: rgb(0, 179, 255);}
+     
+ 
+.seccioncards{
+    padding: 20px;
+    padding-left: 122px;
+}
+
+
+#filtro{
+    width: 330px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: width 0.4s ease-in-out;
+    padding: 4px;
+    vertical-align: super;
+    margin-left: 5px;
+}
+
+#filtro:focus{
+    width: 330px;
+    font-size: 18px;
+    vertical-align: top;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.search{
+    margin-top: 3px;
+    display: inline-block;
+    margin-left: 490px;
+}
+
+.search span{
+    color: white;
+    padding-top: 3px;
+    font-size: 14px;
+
+}
+
+
+
+/*FIN ARTURO*/
+.submenu{
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  transition: 0.7s all;
+  z-index: 1; 
+}
+
+
+
+/*fin de estilos del header*/
+/*Inicio del main de Articulos */
+#txtFiltro, label{
+   
+   padding-right: 40px;
+   margin-left: 10px;
+}
+
+#btnAgregar  {
+    width: 70px;
+    height: 70px;
+    text-align: right;
+    float: right;
+
+}
+.agregarArtciulos{
+     text-align:left;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; /* Habilite desplazamiento si es necesario
+ */
+
+     animation-name: mostrar;
+    animation-duration: 0.4s;
+}
+
+.agregarArtciulos-content{
+    text-align:left;
+  
+    padding: 20px;
+    
+   
+    
+   
+}
+.modal{
+    animation-name: seleccione;
+    animation-duration: 0.4s;
+    background-color: rgba(0, 0, 0, 0.37);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;} 
+     
+    @keyframes seleccione {
+        from {opacity: 0} 
+        to {opacity: 1}}
+
+    .modal-containeer{
+        text-align: center;
+        top: 260px;
+        left: 615px;
+        position: fixed;
+        width: 300px;
+        border: 6px solid rgb(51, 39, 29);
+        padding: 26px;
+        align-content: center;
+        font-size: 24px;
+        font-weight: 500;
+        background: rgba(134, 47, 16, 0.77);
+        border-radius: 10px;}
+
+    #btnAceptar{
+      color: rgb(1, 18, 19);
+      background: rgb(143, 136, 122);
+      border-radius: 5px;
+      border: 0px;
+      padding: 10px;
+     width: 90px;
+     font-weight: 800;
+     margin-top: 30px;
+    display: inline-block; }
+
+       #btnAceptar:hover{
+        cursor: pointer;
+        background: rgb(82, 77, 69);
+        color: #fff;}
+
+
+.Proveedor {
+    text-align: left;
+    margin-top: 28px;
+   
+
+
+}
+.selectimage{
+
+    margin-top: 40px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;    
+    
+}
+.selectimage img{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+
+.precios{
+
+}
+.precios div{
+    margin-top: 10px; 
+}
+.descripcion{
+    
+   
+    margin-right: 59px;
+}
+.botonDeshabilitar {
+    color: black;
+    background: red;
+    padding: 5px;
+    border-radius: 5px;
+    text-align:left;
+      margin-right: 345px;
+}
+#Titulo{
+    font-size: 25px;
+}
+.botonEditar {
+    color: black;
+    background: #3498db;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    text-align:left;
+   
+}   
+/*boton span*/
+.btnCerrar{
+ color: #aaa; 
+     margin-bottom:  65px;
+     text-align: right;
+    padding-left: 40px;
+    color: #fff;
+ background:rgb(5, 135, 137);
+     border-radius: 5px;
+    padding: 5px 16px 6px;
+    display:block;
+       margin-top: 150px;
+    margin-right: 65px;
+ 
+
+}
+.btnCerrar:hover {
+
+   color: black;
+        cursor: pointer;
+    box-shadow: 1px 1px 1px  black;
+    color:#fff;
+    cursor: pointer;
+ 
+}
+.btnAbrir{
+     display: block;
+       float: left;
+    margin-top: 180px;
+    text-align: center;
+
+    margin: auto;
+ 
+    color: #fff;
+ background:rgb(5, 135, 137);
+    border-radius: 5px;
+    padding: 5px 16px 6px;
+   
+}
+.btnAbrir:hover{
+    color: black;
+        cursor: pointer;
+    box-shadow: 1px 1px 1px  black;
+    color:#fff;
+    cursor: pointer;
+}
+#btndeshabilitar{
+    color: rgb(1, 18, 19);
+    background:white;
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px;
+   width: 90px;
+   font-weight: 800;
+   margin-top: 30px;
+  display: inline-block;}
+
+        #btndeshabilitar:hover{
+            cursor: pointer;
+            color: rgb(187, 72, 43);}
+        
+           
+           
+#btnCancelar{
+    color: rgb(1, 18, 19);
+    background: rgb(143, 136, 122);
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px;
+    width: 90px;
+    font-weight: 800;
+    margin-top: 30px;
+    display: inline-block; }
+          
+     #btnCancelar:hover{
+     cursor: pointer;
+     background: rgb(82, 77, 69);
+    color: #fff;}
+.categorias{
+    text-align: left;
+    border: 1px solid #000;
+    width: 200px;
+    background: #fff;
+    text-align: center;}
+
+  .categorias div{
+     padding-bottom:  10px;
+     margin-bottom:  10px;
+     border: 1px solid #fff;}
+
+     .categorias div:hover{
+       background: #7BD506;}
+
+  .categorias a{
+    text-decoration:none;
+   color: #000;}
+
+        .categorias a:hover {
+           color: #fff;}
+.card{
+  
+}
+
+/*Cards*/
+.cardArticulo{
+   width: 250px;
+    height: 340px;
+    background: rgb(80, 61, 46);
+   border-radius: 10px;
+   color:#fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+    margin: 50px;
+    margin-top :50px;
+    float:left;
+}
+/*cards*/
+
+.cardArticulo .imagenCard{
+   color:rgb(0, 120, 218);
+    height: 130px;
+    width: 200px;
+    margin: auto;
+}
+.cardArticulo span{
+      font-size: 18px;
+      display: block;
+      margin-top: 10px;
+}
+.cardArticulo h3{
+    padding: 5px;
+}
+
+.cardArticulo .imagenCard img {
+  text-align:center;
+    height: 100%;
+    width: 100%;
+    
+}
+.cardArticulo:hover{
+    cursor:pointer;
+    background: rgb(180, 61, 46);
+
+    }
+ /*inicia estilos del footer*/
+ 
+
+#tituloYAgregar{
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 6px;
+    position: fixed;
+    
+
+}    
+/*clases generales*/
+.clearFix{
+    clear: both;
+
+}
+
+.error{
+    border: 2px solid #e74c3c
+}
+.ocultar{
+    display: none;
+}
+
+/*fin de las clases generales*/

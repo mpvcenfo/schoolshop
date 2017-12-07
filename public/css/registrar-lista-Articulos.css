@@ -1,0 +1,261 @@
+#tituloYAgregar{
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 6px;
+    position: fixed;
+    width: 1270px;
+
+}
+#tituloP{
+    font-size: 28px;
+    display:inline-block; 
+    color: rgb(255, 255, 255);
+}
+
+#btnAbrirModal{
+    color: rgb(255, 255, 255);
+    float: right;
+   
+}
+
+#filtro{
+    width: 330px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: width 0.4s ease-in-out;
+    padding: 4px;
+    vertical-align: super;
+    margin-left: 5px;
+}
+
+#filtro:focus{
+    width: 330px;
+    font-size: 18px;
+    vertical-align: top;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.search{
+    display: inline-block;
+}
+
+.search span{
+    color: white;
+    padding-top: 3px;
+    font-size: 14px;
+
+}
+
+/*row Form*/
+
+.rowForm{
+    padding: 70px;
+}
+
+.divForm{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 16px;
+}
+
+.datos input , select,textarea{
+    margin-bottom: 20px;
+    display: block;
+    font-weight: 500px;
+}
+
+.divForm label{
+    font-weight: 500;
+    margin-bottom: 7px;
+    display: block;
+    font-size: 20px;
+}
+
+.formulario{
+    background:  rgb(195, 184, 165);
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.btnFormulario{
+    border:1px solid black;
+    border-radius: 5px;
+    background: rgb(5, 135, 137);
+    padding: 8px;
+    width: 120px;
+    font-weight: bold;
+    margin-right:30px;
+}
+
+.btnFormulario:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 1px  black;
+    color:white;
+}
+
+
+.divBtn{
+    padding-left: 24px;
+}
+
+
+
+
+
+
+
+
+
+/*Tabla*/
+.tablaArticulos{
+    /* margin: auto; */
+    /* margin-top: 30px; */
+    display: inline-block;
+    width: 600px;
+
+}
+
+.tablaArticulos tbody{
+    overflow: auto;
+    height: 500px;
+    display: inline-block;
+    width: auto;
+
+}
+
+
+
+.tablaArticulos  tr:nth-child(even) {
+    background-color: rgb(165, 134, 109);
+}
+.tablaArticulos  tr:nth-child(odd) {
+    background-color: rgb(125, 101, 82);
+}
+.tablaArticulos  th {
+    color: white;
+    background-color: rgb(199, 72, 28);
+}
+.tablaArticulos  tr {
+    font-weight: 500;
+}
+
+table,th,td  {
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+td input{
+    width: 20px;
+    height: 20px;
+}
+
+.colCodigo{
+    width: 70px;
+}
+
+.colNombre{
+    width: 100px;
+}
+
+.colDesc{
+    width: 353px;
+}
+
+.colSec{
+    width: 18px;
+}
+
+
+
+
+
+
+
+
+
+/*extras*/
+
+.warning{
+    color:red;
+    border:1px solid red;
+}
+
+
+.ocultar{
+    display: none;
+}
+
+/*modal*/
+
+#msj{
+    animation-name: ingresar;
+    animation-duration: 0.4s;
+    background-color: rgba(0, 0, 0, 0.37);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.confirmacion{
+    top: 260px;
+    left: 615px;
+    position: fixed;
+    width: 400px;
+    border: 6px solid rgb(51, 39, 29);
+    padding: 26px;
+    align-content: center;
+    font-size: 24px;
+    font-weight: 500;
+    background: rgb(5, 135, 137);
+    border-radius: 10px;
+   
+}
+
+.confirmacion span{
+    display: block;
+    width: 600px;
+}
+
+
+.OK{
+    color: rgb(1, 18, 19);
+    background: rgb(143, 136, 122);
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px;
+    width: 90px;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: 150px;
+    display: inline-block;
+}
+
+.OK:hover{
+    cursor: pointer;
+    background: rgb(82, 77, 69);
+}
+.confirmacion .NO{
+    color: rgb(1, 18, 19);
+    background: rgb(143, 136, 122);
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px;
+    width: 90px;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.confirmacion .NO:hover{
+    cursor: pointer;
+    background: rgb(82, 77, 69);
+}

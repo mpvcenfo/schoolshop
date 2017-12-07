@@ -1,0 +1,81 @@
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+#divMensaje {
+    margin: 0px 450px;
+    width: 300px;
+    height: 20px;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+.ocultar {
+    visibility: hidden;
+}
+  
+.divError {
+    background: #ff0000;
+}
+  
+.divCorrecto {
+    background: #b5ff4e;
+}
+
+#frmTarjeta {
+    color: #ffffff;
+    padding: 20px;
+    margin: 20px 300px;
+    width: 600px;
+    height: 300px;
+    border: 1px solid #000000;
+    background: #67aa0f;
+}
+
+.campo {
+    width: 400px;
+    height: 40px;
+    padding: 20px;
+}
+
+.campo input {
+    font-size: 16px;
+    width: 200px;
+    height: 30px;
+    float: right;
+}
+
+.campoError {
+    border: 1px solid #eb1717;
+}
+
+#continuar {
+    margin: 10px 400px;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+}
+
+#flechaSiguiente {
+    font-size: 24px;
+}
+
+#notaSiguiente {
+    font-size: 16px;
+}
+
+#btnContinuar {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 20px 100px;
+    font-size: 16px;
+    background-color: #a6ff29;
+}
+
+#btnContinuar a {
+    text-decoration: none;
+    color: #000000;
+}

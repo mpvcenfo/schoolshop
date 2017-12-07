@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="imgs/logoSchoolShop.png" type="image/x-icon">
+    <title>School Shop | Página de inicio</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/tiphography.css">
+    <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/redimir.css">
+    <link rel="stylesheet" href="./css/style-home.css">
+</head>
+<body>
+    <header class="column column-2 menu">
+        
+        <section class="row" >
+            <div class="column column-5"> 
+                <img src="imgs/logoSchoolShop_Black.png" alt="Logo School Shop" width="100%">
+            </div>
+            <div  class="column column-7 slogan">
+                <h2>School</h2>
+                <h3>Shop</h3>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="column nav">
+                <nav>
+
+                </nav>
+            </div>
+        </section>
+      
+
+    </header>
+
+    <section class="column column-10">
+       <div class='row menutop'>             <i id="return" class="fa fa-arrow-circle-o-left fa-2x" aria-hidden="true"></i>
+            <nav>
+                <a href="#">Ir a la tienda <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+                <a href="login.html">Cerrar sesión</a>
+                
+            </nav>
+        </div>
+
+        <div class='row main'>
+            <div id="tituloYAgregar" class="row"> 
+				<h1 id="tituloP">Redimir</h1>
+			</div>
+			<div id="codRedimir" class="row">
+				<label for="codFactura">Codigo a redimir</label>
+				<input id="codFactura"type="text" placeholder="#Factura...">
+				<input id="btnValidar" type="button"  value="Validar">
+			</div>
+
+			<div id="divEncabezado" class="column column-4">
+                <div class="encabezado">
+					<label for="cedula">Cedula</label>
+					<output id="cedula"type="text" value=" ">-</output>
+					<label for="fecha">Fecha Pedido</label>
+					<output id="fecha"type="text" value=" ">-</output>
+					<label for="saldo">Saldo</label>
+					<output id="saldo"type="text" >-</output>
+					<label for="estatus">Estatus</label>
+                    <output id="estatus"type="text" >-</output>
+                </div>
+			</div>
+			
+			<section id="detallePedido" class="column column-8">
+				
+				<table id="tablaDetalle">
+					<caption>Pedido</caption>
+					<thead>
+						<th class="colArticulo">Articulo</th>
+						<th class="colNombre">Nombre</th>
+						<th class="colCantidad">Cantidad</th>
+						<th class="colPrecio">Precio</th>
+					</thead>
+
+					<tbody>
+
+					</tbody>	
+				</table>
+			</section>
+
+			<div id="botones" class="ocultarRegistro column column-12">
+				<input id="btnRedimir" class="btnFormulario" type="button" value="Redimir">
+				<input id="btnPagar" class="btnFormulario" type="button" value="Pagar">
+			</div>
+						
+			
+				
+        </div>
+    </section>
+
+    <footer>
+        <div class="column column-12">
+            <div class="column column-4"></div>
+            <div class="column column-4"></div>
+            <div class="column column-4"></div>
+        </div>
+    </footer>
+
+    <script src="js/logica-comun.js"></script>
+    <script src="js/logica-redimir.js"></script>
+    <script src="js/controlador-redimir.js"></script>
+
+</body>
+</html> 

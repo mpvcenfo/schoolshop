@@ -1,0 +1,53 @@
+
+
+.modificarContrasena{
+
+    width: 400px;
+    height: 400px;
+    background: #058789;
+    border-radius: 10px;
+    margin-left: 350px;
+    margin-top: 50px;
+
+}
+
+.modificarContrasena h1{
+
+    font-size: 24px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+
+
+}
+
+.espacios label{
+
+    font-size: 16px;
+    margin-left: 75px;
+    padding-bottom: 5px;
+    margin-top: 60px;
+
+
+}
+
+
+.espacios input{
+    width: 250px;
+    margin-left: 75px;
+    padding-bottom: 15px;
+    margin-bottom: 7px;
+    padding-top: 7px;
+
+}
+
+#btnCambiarContrasena {
+    padding: 8px;
+    margin-left: 125px;
+    border-radius: 5px;
+}
+
+#btnCambiarContrasena:hover{
+    cursor: pointer
+
+}

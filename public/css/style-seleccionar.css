@@ -1,0 +1,317 @@
+
+
+        
+
+
+/*Inicio main lista*/
+#txtFiltro, label{
+    text-align: left;
+   float: left;
+   padding-right: 40px;
+   margin-top: 50px;
+   margin-left: 40px;
+}
+
+#btnAgregar{
+    color: rgb(28, 109, 145);
+    float: right;
+   
+}
+
+#btnAgregar:hover{
+    cursor: pointer;
+    color: rgb(0, 179, 255);
+   
+}
+
+/* FIN TITULO Y BOTON*/
+
+
+
+.modal{
+    display: none; /* lo esconde por defecto */
+    position: fixed;
+    z-index: ; 
+    left: 0;
+    top: 0;
+    
+    width: 100%;
+    height: 100%; 
+    overflow: auto; /* Habilite desplazamiento si es necesario
+ */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+/*clases para el formulario js*/
+.ocultar{
+    display: none;
+}
+
+.error{
+    border: 2px solid #e74c3c
+}
+/*clases para el formulario js*/
+
+.agregarista-content{
+  background: rgb(194, 245, 128);
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 600px; 
+    height: 320px;
+
+}
+.agregarista-content h2{
+     text-align: left;
+     margin-top: 10px;
+     margin-left: 20px;
+}
+#seprovedor{
+    text-align: left;
+}
+.selectimage{
+    float: right;
+}
+.selectimage img{
+    text-align: right;
+ 
+}
+.inputs{
+    float: left;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.inputs input {
+    margin-top: 10px;
+}
+
+.inputs textarea {
+    margin-top: 10px;
+}
+.nivel{
+   margin-top: 50px; 
+  
+}
+.seccion{
+       margin-top: 50px; 
+      
+}
+.agregarista-content input{
+    display: block;
+    margin-right:  40px;
+    text-align: right;
+}
+.atxtDescripcion{
+       margin-top: 50px; 
+    text-align: left;
+}
+.atxtDescripcion textarea  {
+      height: 60px;
+}
+.modal .Titulo{
+float:left;
+margin-left: 250px; 
+}
+
+/*boton span*/
+
+.btnCerrar{
+ color: #aaa; 
+     margin-bottom:  65px;
+     text-align: right;
+    padding-left: 40px;
+    color: #fff;
+  background: rgb(140, 248, 0);
+    border-radius: 5px;
+    padding: 5px 16px 6px;
+    display:block;
+    margin-right: :65px;
+    margin-top: 30px;
+ 
+
+}
+.btnCerrar:hover {
+
+   color: black;
+        cursor: pointer;
+    box-shadow: 1px 1px 1px  black;
+    color:rgb(0, 138, 192);
+    cursor: pointer;
+ 
+}
+.btnAbrir{
+     display: block;
+       float: left;
+    margin-top: 80px;
+    text-align: center;
+
+    margin: auto;
+ 
+    color: #fff;
+ background: rgb(140, 248, 0);
+    border-radius: 5px;
+    padding: 5px 16px 6px;
+   
+}
+.btnAbrir:hover{
+    color: black;
+        cursor: pointer;
+    box-shadow: 1px 1px 1px  black;
+    color:rgb(0, 138, 192);
+    cursor: pointer;
+}
+/* Botones de editar y deshabilitar*/
+.botonEditar{
+   color:#fff;
+  background:#2980b9;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.botonDeshabilitar{
+
+        color: black;
+    background: red;
+    padding: 5px;
+    border-radius: 5px
+}
+
+.botonEditar:hover, .botonDeshabilitar:hover{
+    cursor: pointer;
+}
+.botonEditar:hover{
+    background:#3498db; 
+}
+.botonDeshabilitar:hover{
+    background:#e74c3c;
+}
+
+.btnArticulos{
+ color: #aaa; 
+     margin-bottom:  65px;
+     text-align: right;
+    padding-left: 40px;
+    color: #fff;
+  background: rgb(140, 248, 0);
+    border-radius: 5px;
+    padding: 5px 16px 6px;
+    display:block;
+   margin-top: 30px;
+    float:right;
+    margin-right: 20px;
+ 
+
+}
+.btnArticulos:hover {
+
+   color: black;
+        cursor: pointer;
+    box-shadow: 1px 1px 1px  black;
+    color:rgb(0, 138, 192);
+    cursor: pointer;
+ 
+}
+/**/
+
+/*Inicio tabla lista generales*/
+
+
+
+#tblLista{
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+
+#tblLista  tr:nth-child(even) {
+    background-color: rgb(194, 245, 128);
+}
+#tblLista tr:nth-child(odd) {
+    background-color: rgb(169, 216, 107);
+}
+#tblLista th {
+    color: black;
+    background-color: rgb(140, 248, 0);
+    /* border: 1px solid black;
+    border-bottom: 0px; */
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+  
+}
+
+table,th,td  {
+    border-collapse: collapse;
+    padding: 15px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.colCodigo{
+    width: 100px;
+   
+}
+
+.colNombre{
+    width: 250px;
+}
+
+.colDescripcion{
+    width: 260px;
+}
+
+.colSeccion{
+    width: 100px;
+}
+.colnivel{
+    width: 150px;
+}
+.colEdit{
+   width: 100px;
+}
+
+
+/*FIN TABLA*/
+/*Fin tabla lista generales*/
+
+/*clases generales*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    
+    
+ 
+    
+/*clases generales*/
+.clearFix{
+    clear: both;
+
+}
+
+.error{
+    border: 2px solid #e74c3c
+}
+.ocultarAgregar{
+     display: none;
+}

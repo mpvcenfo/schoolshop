@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="imgs/logoSchoolShop.png" type="image/x-icon">
+    <title>School Shop | Página de inicio</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/tiphography.css">
+    <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/Institucion.css">
+    <link rel="stylesheet" href="./css/style-home.css">
+</head>
+<body>
+    <header class="column column-2 menu">
+        
+        <section class="row" >
+            <div class="column column-5"> 
+                <img src="imgs/logoSchoolShop_Black.png" alt="Logo School Shop" width="100%">
+            </div>
+            <div  class="column column-7 slogan">
+                <h2>School</h2>
+                <h3>Shop</h3>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="column nav">
+                <nav>
+
+                </nav>
+            </div>
+        </section>
+      
+
+    </header>
+
+    <section class="column column-10">
+       <div class='row menutop'>             <i id="return" class="fa fa-arrow-circle-o-left fa-2x" aria-hidden="true"></i>
+            <nav>
+                <a href="#">Ir a la tienda <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+                <a href="login.html">Cerrar sesión</a>
+                
+            </nav>
+        </div>
+
+        <div class='row main'>
+                <div class="row" id="tituloYAgregar">
+					<h1 id="tituloP">Instituciones</h1>
+					<div class="search">
+						<span><i class="fa fa-search fa-2x" aria-hidden="true"></i><input id="filtro" type="text"></span>
+					</div>
+                    <a href="registrar-Institucion.html"><span id="btnAbrirModal"  class="fa fa-plus-square fa-2x"> Agregar</span></a>
+                </div>
+
+                <div class="row" id="cardsInstitucion">
+
+                </div>
+        </div>
+    </section>
+
+    <div id="modal" class="ocultar">
+				<div id="registarContainer" >
+						<form id="formInstitucion">
+							<span id="formTitulo">Registrar Institución</span>
+							<div id="btnModDes" class="ocultar">
+								<span id="btnEdit" class="fa fa-pencil botonEditar"></span>
+								<span id="btnDelete" class="fa fa-trash botonDeshabilitar"></span>
+							</div>
+							<div class='formImagen' id="file-form" enctype="multipart/form-data">
+								<button type="button" id="btnSeleccionarImagen" name="submit" >Seleccionar imagen</button>
+								<img src="" alt="" id='foto'>
+							</div>
+						
+							<div>
+								<input type="hidden" id="idInst">
+							</div>
+							<div >
+								<label for="txtNombre">Nombre</label>
+								<input type="text" id="txtNombre" placeholder="">
+							</div>
+	
+							<div>
+								<label for="txtDireccion">Direccion fisica</label>
+								<input class="" type="text" id="txtDireccion" placeholder="">
+							</div>
+	
+							<div  class="divCorto">
+								<label for="txtLat">Latitud</label>
+								<input class="inputCorto" type="text" id="txtLat" placeholder="">
+							</div>
+	
+							<div class="divCorto">
+								<label for="txtLon">Longitud</label>
+								<input class="inputCorto" type="text" id="txtLon" placeholder="">
+							</div>
+	
+							
+							<div>
+								<label for="txtNombreContacto">Nombre - Contacto</label>
+								<input class="" type="text" id="txtNombreContacto" placeholder="">
+							</div>
+	
+							<div>
+								<label for="nTelefonoContacto">Telefono - Contacto</label>
+								<input class="" type="text" id="nTelefonoContacto" placeholder="">
+							</div>
+	
+							<div>
+								<label for="txtCorreo">Correo electronico - Contacto</label>
+								<input class="" type="emial" id="txtCorreo" placeholder="">
+							</div>
+	
+							<div  class="divCorto">
+								<label for="nNivelesDesde">Niveles Desde</label>
+								<select class="inputCorto" type="select" id="nNivelesDesde" >
+									<option value="0">Maternal</option>
+									<option value="1">Prekinder</option>
+									<option value="2">Kinder</option>
+									<option value="3">Preparatoria</option>
+									<option value="4">Primero</option>
+									<option value="5">Segundo</option>
+									<option value="6">Tercero</option>
+									<option value="7">Cuarto</option>
+									<option value="8">Quinto</option>
+									<option value="9">Sexto</option>
+									<option value="10">Sétimo</option>
+									<option value="11">Octavo</option>
+									<option value="12">Noveno</option>
+									<option value="13">Décimo</option>
+									<option value="14">Undécimo</option>
+									<option value="15">Duodécimo</option>
+									
+								</select>
+								
+							</div>
+							<div  class="divCorto">
+								<label for="nNivelesHasta">Hasta</label>
+								<select class="inputCorto" type="select" id="nNivelesHasta" >
+									<!-- <option value="0">Maternal</option>
+									<option value="2">Prekinder</option>
+									<option value="3">Kinder</option>
+									<option value="4">Preparatoria</option>
+									<option value="5">Primero</option>
+									<option value="6">Segundo</option>
+									<option value="7">Tercero</option>
+									<option value="8">Cuarto</option>
+									<option value="9">Quinto</option>
+									<option value="11">Sexto</option>
+									<option value="12">Sétimo</option>
+									<option value="13">Octavo</option>
+									<option value="14">Noveno</option>
+									<option value="15">Décimo</option>
+									<option value="16">Undécimo</option>
+									<option value="17">Duodécimo</option> -->
+									
+								</select>
+								
+							</div>
+	
+							<div  class="divCorto">
+								<label for="nSecciones">Secciones por nivel</label>
+								<input  class="inputCorto" type="number" id="nSecciones" min="0" placeholder="">
+							</div>
+	
+						</form>
+						<div id="botones">
+							<input id="btnRegistrar" class="btnFormulario" type="button" value="Registrar">
+							<input id="btnCancelar" class="btnFormulario" type="button" value="Cancelar">
+						</div>
+				</div>
+			</div>
+
+    <footer>
+        <div class="column column-12">
+            <div class="column column-4"></div>
+            <div class="column column-4"></div>
+            <div class="column column-4"></div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/logica-comun.js"></script>
+    <script src="js/logica-institucion.js"></script>
+    <script src="js/controlador-institucion.js"></script>
+</body>
+</html> 

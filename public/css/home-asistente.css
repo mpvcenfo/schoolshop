@@ -1,0 +1,32 @@
+/*Clases */
+
+.cardsHome{
+    width: 250px;
+    height: 300px;
+    background-color:rgb(123, 213, 6);
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+    margin: 50px;
+}
+
+.cardsHome h3{
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.cardsHome #imagenCard{
+    color:rgb(0, 120, 218);
+    height: 130px;
+}
+
+.cardsHome #contenido{
+    height: 130px;
+}
+
+.cardsHome:hover{
+    cursor:pointer;
+    background-color:rgb(140, 248, 0);
+}
+

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-articulo.css">
+    <link rel="stylesheet" type="text/css" href="css/style-h_f.css">
+    <title>Artículos</title>
+</head>
+<body>
+    <header>
+        <img src="img/logotipo.png">
+        <nav>
+
+
+           <ul class="menu">
+          
+          <li><a href="">Estudiantes</a></li>
+         <li><a href="">Cursos</a>
+               
+         </li>
+
+
+<li><a href="">Artículos</a>
+    <ul class="submenu">
+                    <li> <a href="">Listas de Artículos por sección</a></li>
+
+                </ul>
+
+</li>
+
+<li><a href="">Institucion</a>
+
+        <ul class="submenu">
+                    <li> <a href="">Profesores</a></li>
+                    <li> <a href="">Asistente</a></li>
+
+                </ul>
+</li> 
+                  <li><a href="">Reportes</a>
+                <ul class="submenu">
+                    <li> <a href="Estudiantes">Estudiantes</a></li>
+                    <li> <a href="Articulos"> Articulos</a></li>
+                </ul>
+         </li>
+         <li><a href="login.html" onclick="cerrarSesion()">Cerrar sesión</a></li>
+
+    </ul>
+         
+
+   
+    </header>
+
+<main>
+
+    <section class="buscar">
+      <label for="txtFiltro"><i class=""></i></label>
+    <input type="text" id="txtFiltro" class="fa fa-search" placeholder="Filtrar">
+
+     <button  type="button" id="btnAgregar"><i class="fa fa-plus-square  fa-5x"></i></button>
+                <div class="clearFix"></div>
+         <div class="agregarArtciulos" id="modal">
+             
+            <form id="formularioagregar" class="agregarArtciulos-content">
+                 
+
+
+                 <span id="Titulo">Agregar Artículo</span>
+                <div id="btnModDes" class="ocultarAgregar">
+                <span id="btneditar" class="fa fa-pencil botonEditar"></span>
+                <span id="btneliminar" class="fa fa-trash botonDeshabilitar"></span>
+              </div>
+
+
+
+                            <div class="selectimage">  
+         
+                 <img id="mostrar" src="" alt="Imagen"  >
+               
+                 <input type="file" title=""  id="inputImage">
+                   </div>
+                               
+
+                          <div class="Proveedor">
+                            <h3 for="seprovedor">Proveedor</h3>
+                              <div ckas="clearFix"></div>
+                               <select id="seprovedor">
+                                <option value="" disabled selected="">
+                                    Seleccione un Proveedor
+                                </option>
+                                  <option value="a">a</option>
+                                  <option value="b">b</option>
+                              </select>
+                          </div>
+                 
+                        
+
+                            
+                   <div class="precios"> 
+                      <div >
+                         <h3>Precio de costo</h3>
+                       <input type="number"  id="nCosto">
+                        </div>
+                           <div>
+                              <h3>Precio de venta</h3>
+                       <input type="number" name="" id="nVenta">
+                        </div>
+                         <div>
+                         <h3>Precio de Mercado</h3>
+                       <input type="number" name="" id="nMercado">
+                          </div>
+
+                   </div>
+
+                    <div class="codigo">
+                    <h3 for="nCodigo">Código</h3>
+                   <input type="number" id="nCodigo">
+                     </div>
+                
+                        <div class="nombre">
+                             <h3>Nombre</h3>
+                        <input type="text" name="" id="txtnombre">
+                           </div>
+
+               
+                   <div class="clearFix"></div>
+                  
+
+                     <div class="descripcion">
+                      <h3 for="txtdescripcion">Descrpción</h3>
+                       <textarea id="txtdescripcion" ></textarea>
+                   </div>
+                   <div class="clearFix"></div>
+              
+
+                 <div id="botones">
+              <input id="btnanadir" class="btnAbrir" type="button" value="Registrar">
+              <input id="btnCerrar" class="btnCerrar" type="button" value="Cancelar">
+            </div>
+            </form id="formularioagregar">
+         </div>
+    </section>
+        
+    
+
+   
+     <div id="divarticulos" class="seccioncards"></div>
+
+
+
+
+
+
+
+</main> 
+    
+     <div class="clearFix"></div>
+
+<footer>
+    <div id="menu">
+      <h2>School</h2>
+      <h3>Shop</h3>
+
+      <nav>
+                    <a href="#">Estudiantes</a>
+                    <a href="#">Personal </a>
+                    <a href="#">Artículos</a>
+                    <a href="">Artículos</a>
+                    <a href="">Institución</a>
+                    <a href="">Reportes</a>
+                    <a href="login.html" onclick="cerrarSesion()">Cerrar sesión</a>
+        
+            </nav>
+
+    </div>
+
+    <div id="contactos">
+
+      <h1>Contactenos</h1>
+
+      <span class="fa fa-phone"></span>
+      <h2>+506 2589-5562</h2>
+      <span class="fa fa-envelope-o"></span>
+      <h3>info@schoolshop.com</h3>
+
+    </div>
+
+    <div id="redes">
+      <h2>Find us</h2>
+      <span class="fa fa-facebook-official fa-3x"></span>
+      <span class="fa fa-google-plus-official fa-3x"></span>
+      <span class="fa fa-map fa-3x"></span>
+
+    </div>
+
+
+
+    <div class="clearFix"></div>
+    
+  </footer>
+  <script src="js/logica-comun.js"></script>
+  <script src="js/logicaArticulo.js"></script>
+ <script src="js/controladorArticulo.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="imgs/logoSchoolShop.png" type="image/x-icon">
+    <title>School Shop | Página de inicio</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/tiphography.css">
+    <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style-articulo.css">
+    <link rel="stylesheet" href="./css/style-home.css">
+</head>
+<body>
+    <header class="column column-2 menu">
+        
+        <section class="row" >
+            <div class="column column-5"> 
+                <img src="imgs/logoSchoolShop_Black.png" alt="Logo School Shop" width="100%">
+            </div>
+            <div  class="column column-7 slogan">
+                <h2>School</h2>
+                <h3>Shop</h3>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="column nav">
+                <nav>
+
+                </nav>
+            </div>
+        </section>
+      
+
+    </header>
+
+    <section class="column column-10">
+       <div class='row menutop'>             <i id="return" class="fa fa-arrow-circle-o-left fa-2x" aria-hidden="true"></i>
+            <nav>
+                <a href="#">Ir a la tienda <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+                <a href="login.html">Cerrar sesión</a>
+                
+            </nav>
+        </div>
+
+        <div class='row main'>
+
+            <div class="row" id="tituloYAgregar">
+                <h1 id="tituloP">Articulos</h1>
+                <div class="search">
+                    <span><i class="fa fa-search fa-2x" aria-hidden="true"></i><input id="filtro" type="text"></span>
+                </div>
+                <a href="registrar-articulo.html"><span id="btnAbrirModal"  class="fa fa-plus-square fa-2x"> Agregar</span></a>
+            </div>
+            
+
+            <div id="divarticulos" class="seccioncards">
+                    
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="column column-12">
+            <div class="column column-4"></div>
+            <div class="column column-4"></div>
+            <div class="column column-4"></div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/logica-comun.js"></script>
+    <script src="js/controlador-listar-Articulo.js"></script>
+    <script src="js/logica-listar-Articulo.js"></script>
+</body>
+</html> 

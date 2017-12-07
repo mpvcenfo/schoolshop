@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Factura | SchoolShop</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style-h_f.css">
+    <link rel="stylesheet" type="text/css" href="css/factura.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logotipo.png">
+        <nav>
+            <a href="home-encargado.html">Inicio</a>
+            <a href="shopping.html">Carrito de compras</a>
+            <a href="login.html" onclick="cerrarSesion()">Cerrar sesión</a>
+        </nav>
+        <div class="clearFix"></div>
+    </header>
+    <main>
+        <section id="factura">
+            <h2>Factura</h2>
+            <h2 id="codFactura"></h2>
+            <p>Conserve este número de factura para retirar su pedido.</p>
+            <table id="tblFactura">
+                <thead>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+        <section id="pago">
+            <h2>Información de pago</h2>
+            <div class ="datoPago">
+                <span>Forma de pago</span>
+                <span id="formaPago"></span>
+            </div>
+            <div class ="datoPago">
+                <span>Monto cancelado</span>
+                <span id="montoPago"></span>
+            </div>
+            <div class ="datoPago">
+                <span>Saldo</span>
+                <span id="montoSaldo"></span>
+            </div>
+        </section>
+        <section id="continuar">
+            <button type="button" id="btnContinuar">Confirmar</button>
+        </section>
+        <div class="clearFix"></div>
+    </main>
+    <footer>
+        <div id="menu">
+            <h2>School</h2>
+            <h3>Shop</h3>
+            <nav>
+                <a href="#">Registrar estudiante</a>
+                <a href="#">Carrito de compras</a>
+                <a href="login.html">Cerrar sesión</a>
+            </nav>
+        </div>
+        <div id="contactos">
+            <h1>Contactenos</h1>
+            <span class="fa fa-phone"></span>
+            <h2>+506 2589-5562</h2>
+            <span class="fa fa-envelope-o"></span>
+            <h3>info@schoolshop.com</h3>
+        </div>
+        <div id="redes">
+            <h2>Find us</h2>
+            <span class="fa fa-facebook-official fa-3x"></span>
+            <span class="fa fa-google-plus-official fa-3x"></span>
+            <span class="fa fa-map fa-3x"></span>
+        </div>
+        <div class="clearFix"></div>
+    </footer>
+    <script src="js/logica-comun.js"></script>
+    <script src="js/logica-factura.js"></script>
+    <script src="js/controlador-factura.js"></script>
+</body>
+
+</html>

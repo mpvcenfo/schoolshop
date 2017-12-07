@@ -1,0 +1,293 @@
+body{
+    width:1200px;
+    height: 1200px;
+    font:Times new roman; 
+    text-align: center;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*inicio estilos header Articulos*/
+header{
+    
+width: 1200px;
+height: 150px;
+background-color: rgb(123, 213, 6);
+ }
+ header img{
+height: 140px;
+float: left;
+ }
+header nav{
+margin-top: 105px;
+float: right;
+margin-right: 120px;
+ }
+
+        
+ ul {
+  list-style: none;
+  padding: 0;
+  margin:0;
+  position: relative;
+}
+ul.menu> li{
+  display: inline-block;
+  vertical-align:bottom;
+
+}
+ul li a{
+  display: block;
+
+ background-color: rgb(123, 213, 6);
+       text-align: center;
+font-size: 22px;
+color: #000;
+border:none;
+text-decoration: none;
+
+padding :10px;
+  
+
+  vertical-align: bottom;
+ 
+}
+ul li a:hover{
+
+  color: rgb(28, 109, 145);
+        
+}
+ul.menu>li>ul.submenu>:hover>a{
+  background: #ecf0f1;
+  color:#000;
+}
+.submenu{
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  transition: 0.7s all;
+  z-index: 1; 
+}
+.submenu li:hover{
+  background:  #3498db;
+}
+ul.menu>li:hover>ul{
+  height: auto;
+  opacity: 1;
+}
+
+
+
+/*fin de estilos del header*/
+/*Inicio del main de Proveedor */
+#txtFiltro, label{
+    text-align: left;
+   float: left;
+margin-top: 40px;
+margin-left: 60px;
+}
+
+/**/
+
+/*Inicio tabla provedores generales*/
+#tblBecados{
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+
+#tblBecados  tr:nth-child(even) {
+    background-color: rgb(194, 245, 128);
+}
+#tblBecados tr:nth-child(odd) {
+    background-color: rgb(169, 216, 107);
+}
+#tblBecados th {
+    color: black;
+    background-color: rgb(140, 248, 0);
+    /* border: 1px solid black;
+    border-bottom: 0px; */
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+  
+}
+
+table,th,td  {
+    border-collapse: collapse;
+    padding: 15px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+
+.colNombre{
+    width: 100px;
+}
+
+.coltelefono{
+    width: 100px;
+}
+
+.colCorreo{
+    width: 100px;
+}
+.colEncargado{
+    width: 150px;
+}
+.colCategorias{
+   width: 250px;
+}
+.colEdit{
+   width: 100px;
+}
+/*Fin tabla provedores generales*/
+
+/*clases generales*/
+.clearFix{
+    clear: both;
+}
+.ocultarAgregar{
+    display: none;
+}
+.error{
+    border: 2px solid #e74c3c
+}
+
+/*fin de las clases generales*/
+
+
+ /*inicia estilos del footer*/
+    
+    footer{
+    
+        width: 1200px;
+        height: 130px;
+        margin-top: 800px;
+         
+     
+    }
+    
+    #menu {
+        width: 400px;
+        height:130px;
+        float: left;
+        background-color:#a9d86b;
+        
+    }
+    
+    #menu h2{
+        font-size: 20px;
+        color: #000;
+        background-color: white;
+        width: 67px;
+        height:23px;
+        border-radius: 10px 0px 0px 10px;
+        margin-top: 5px;
+        margin-left: 16px;
+        display: inline-block;
+        
+    }
+    
+    #menu h3{
+        font-size: 20px;
+        color: white;
+        background-color: #000;
+        width: 56px;
+        height:23px;
+        border-radius: 0px 10px 10px 0px;
+        display: inline-block;  
+    
+    }
+
+    #menu nav a{
+        display: block;
+        padding-top: 5px;
+        border:none;
+        text-decoration: none;
+        padding-left: 30px;
+        color:Black;
+        display: inline-block;
+    }
+
+    #menu nav a:hover{
+        color:rgb(28, 109, 145);
+    }
+    
+    #contactos {
+        width:390px;
+        height:116px;
+        float: left;
+        background-color:#c2f580;
+        padding-top: 14px;
+        padding-left: 10px;
+    
+    }
+    
+    #contactenos h1{
+        font-size: 14px;
+        color: #000;
+        width: 350px;
+        height:17px;
+        padding-top: 10px;
+        
+        
+    }
+    
+    footer span{
+        width: 34px;
+        height: 34px;
+        display: block;
+        padding-top: 5px;
+    
+    }
+
+
+    #contactos h1{
+        font-size: 22px;
+            
+    }
+    
+    
+    #contactos h2{
+        font-size: 18px;
+        width: 240px;
+        height:21px;
+        float: right;
+        padding-top: 5px;
+        margin-right: 110px;
+            
+    }
+    
+    
+    #contactos h3{
+        font-size: 18px;
+        width: 121px;
+        height:21px;
+        display: inline;
+        
+    }
+    
+    #redes{
+        width: 400px;
+        height:130px;
+        float: left;
+        background-color:#a9d86b;
+    }
+    
+    #redes h2{
+        font-size: 22px;
+        color: #000;
+        width: 350px;
+        height:17px;
+        padding-top: 10px;
+        padding-left: 10px;
+    
+    }
+    
+    #redes span{
+       color: rgb(28, 109, 145);
+        margin-left: 70px;
+       padding-top: 25px;
+    }
+ 

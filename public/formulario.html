@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="">
+      <!-- Styles -->
+      <link rel="stylesheet" href="./css/reset.css">
+      <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="./css/grid.css">
+      <link rel="stylesheet" href="./css/style-home.css">
+      <link rel="stylesheet" href="css/formulario.css">
+    <link rel="shortcut icon" href="imgs/logoSchoolShop.png" type="image/x-icon">
+    
+    <title>School Shoop | Registrar lista por sección</title>
+</head>
+<body>
+    <header class="column column-2 menu">
+        
+        <section class="row" >
+            <div class="column column-5"> 
+                <img src="imgs/logoSchoolShop_Black.png" alt="Logo School Shop" width="100%">
+            </div>
+            <div  class="column column-7 slogan">
+                <h2>School</h2>
+                <h3>Shop</h3>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="column nav">
+                <nav>
+                </nav>
+            </div>
+        </section>
+      
+
+    </header>   
+
+    
+    <section class="column column-10">
+        <div class='row menutop'>
+            <nav>         
+                <a href="#">Ir a la tienda <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+                <a href="login.html">Cerrar sesión</a>
+                
+            </nav>
+        </div>
+
+      
+   
+
+        <div class=" row main">
+                  
+
+            
+                
+
+    <div class=" row main"  id="divarticulos">
+     <form>
+    <table id="inventario" class="column column-4" >
+        <thead>
+            <tr>
+                <th class="colCodigo">Código</th>
+                <th  class="colNombre">Nombre</th>
+                <th class="colSec"> <span class="fa fa-check-square"></span></th>
+            </tr>
+        </thead>
+        <tbody>
+               
+        </tbody>
+    </table>
+ </form>
+</div>
+
+<div >
+     <input type="text" id="txtFiltro" class="fa fa-search" placeholder="Filtrar">
+
+</div>   
+<div class="modal" id="modal" >
+    <div class="modal-containeer">
+        <p> Por favor seleccione  una categoría y llene los campos en rojo</p>
+        <button id="btnAceptar">Aceptar</button>
+   </div>
+   </div>
+
+</div>   
+
+</section>  
+
+           
+   <!-- Fin del formulario -->
+              
+
+   
+
+
+    
+             
+
+               
+        
+
+  <script src="js/logica-lista.js"></script>
+        <script src="js/controlador-lista.js" ></script>
+</body>
+</html>

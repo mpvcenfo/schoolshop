@@ -1,0 +1,528 @@
+
+
+
+
+
+/* inicio de estilos del main*/
+
+main{
+    
+        width: 1200px;
+        min-height: 920px;
+        margin: 5px;
+    
+    }
+
+   /*inicia estilos validacion*/ 
+
+input{
+
+	outline: none;
+}	
+
+select{
+	outline: none;
+}
+
+
+.bordeError{
+	border: 2px solid #e74c3c;
+
+}
+
+#mensajeA{
+	
+	height: 25px;
+}
+.ocultar{
+	visibility: hidden;
+}
+
+.divError{
+	background:#e74c3c;
+}
+.divCorrecto{
+
+	background: #2ecc71;
+}	
+
+/* fin de la validacion */
+
+
+/* inicio de estilos  izquierda */
+
+
+
+
+#registrar h2{
+	font-size: 24px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	margin-top: 10px;
+	margin-left: 100px;
+
+}
+
+.frmModificar {
+	margin-top: 50px;
+}
+
+.frmModificar label{
+
+	font-size: 16px;
+	margin-left: 100px;
+	display: block;
+}
+
+.frmModificar input{
+
+	margin-left: 100px;
+	margin-bottom: 10px;
+	height: 20px;
+
+}
+
+
+#txtIdentificacion {
+	width: 250px;
+	margin-left: 100px;
+	margin-bottom: 15px;
+
+}
+
+#txtIdentificacion  {
+ margin-left: 100px;
+}
+
+
+
+
+#nombreUno {
+	display: block;
+	width: 300px;
+	margin-bottom: 10px;
+}
+
+#nombreUno label {
+	width: 150px;
+	
+}
+
+#nombreUno input{
+	width: 250px;
+	margin-left: 100px;
+}
+
+
+#nombreDos {
+	display: block;
+	width: 300px;
+	margin-bottom: 10px;
+
+}
+
+#nombreDos label{
+	width: 150px;
+	
+
+}
+
+
+#nombreDos input{
+width: 250px;
+margin-left: 100px;
+
+}
+
+
+
+#apellidoUno {
+	display: block;
+	width: 300px;
+	margin-bottom: 10px;
+}
+
+#apellidoUno label {
+	width: 150px;
+	
+}
+
+
+#apellidoUno input{
+	width: 250px;
+	margin-left: 100px;
+}
+
+
+#apellidoDos {
+	display: block;
+	width: 300px;
+	margin-bottom: 10px;
+	
+}
+
+#apellidoDos label{
+	width: 150px;
+	
+}
+
+
+#apellidoDos input{
+width: 250px;
+margin-left: 100px;
+
+}
+
+#tel{
+	margin-bottom: 15px;
+}
+
+#tel input{
+	width: 250px;
+}
+
+#fecha{
+	margin-bottom: 15px;
+}
+
+#fecha input{
+	width: 250px;
+
+}
+
+#direccion{
+	margin-bottom: 15px;
+}
+
+#direccion input{
+	width: 250px;
+}
+
+#telcasa{
+	margin-bottom: 15px;
+}
+
+#telcasa input{
+	width: 250px;
+}
+
+
+
+
+/*inicio estilos de columna centro*/
+
+.centro h2{
+	font-size: 24px;
+	font-weight: bold;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	margin-top: 10px;
+	margin-left: 100px;
+
+}
+
+
+.centro label{
+
+	font-size: 16px;
+	margin-left: 0px;
+	display: block;
+}
+
+.centro input{
+
+	margin-left: 0px;
+	margin-bottom: 20px;
+	height: 20px;
+
+}
+
+
+
+#gender {
+	margin-top: 20px;
+	
+}
+
+#gender input{
+	margin-left: 25px;
+
+}
+
+
+
+#tSangre {
+	
+
+}
+
+#tsangre label{
+
+
+}
+
+#tSangre select{
+	width: 250px;
+	margin-bottom: 20px;
+	padding: 5px;	
+}
+
+
+#donor{
+
+
+}
+
+#donor select{
+	width: 250px;
+	margin-bottom: 20px;
+	padding: 5px;
+
+}
+
+#picture label{
+	margin-left: 0px;	
+}
+
+#picture input{
+	margin-bottom: 20px;
+
+}
+
+
+#beca label{
+margin-top: 10px;
+
+
+}
+
+#beca select{
+
+margin-bottom: 20px;
+padding: 5px;
+width: 250px;
+
+}
+
+/* inicio de estilos de la columna de la derecha */
+
+
+#referencias {
+	margin-top: 50px;
+
+}
+
+#referencias h4{
+	font-size: 16px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+
+}
+
+#referencias h3{
+	margin-bottom: 10px;
+	padding-top: 5px;
+}
+
+#referencias label{
+	font-size: 16px;
+	width: 180px;
+	margin-bottom:3px; 
+}
+
+#referencias input{
+	width: 250px;
+	margin-bottom:3px;
+}
+
+#referencias select{
+	width: 250px;
+	padding: 5px;
+
+}
+
+#contac1 {
+	margin-bottom: 15px;
+}
+
+
+#contac1 label{
+	display: inline-block;
+
+
+}
+
+#contac1 input{
+	width: 250px;
+
+}
+
+#contac2 {
+	margin-bottom: 15px;
+}
+
+
+#contac2 label{
+	float: left;
+
+}
+
+#contac2 input{
+	float: left;
+	width: 250px;
+}
+
+
+#contac3 label{
+	float: left;
+
+}
+
+#contac3 input{
+	float: left;
+	width: 250px;
+
+}
+
+
+#cole {
+	display: block;
+}
+
+
+#cole select{
+	padding: 5px;
+	margin-bottom: 10px;
+	width: 250px;
+	display: block;	
+
+}
+
+
+
+#grado {
+
+}
+
+
+
+#grado label{
+
+}
+
+#grado select{
+	padding: 5px;
+	margin-bottom: 5px;
+	width: 250px;
+	display: block;	
+
+}
+
+
+#grupo {
+
+}
+
+
+#grupo label{
+	
+}
+
+#grupo select{
+	padding: 5px;
+	margin-bottom: 25px;
+	width: 250px;
+	display: block;	
+
+}
+
+
+
+/* siguen los estulos de las columna del centro */
+
+#condimedi label{
+
+
+
+}
+
+#condimedi select{
+	width: 250px;
+	margin-left: 0px;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+#comproban label{
+
+}
+
+
+#comproban input{
+height: 20px;
+margin-bottom: 20px;
+
+}
+
+
+/*inicio de botones*/
+
+.btnFormulario{
+    border:1px solid black;
+    border-radius: 5px;
+    background: rgb(5, 135, 137);
+    padding: 8px;
+    width: 120px;
+    font-weight: bold;
+   
+}
+
+.btnFormulario:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 1px  black;
+    color:rgb(0, 138, 192);
+}
+
+
+
+#btnfrmModificar {
+	margin-top: 150px;
+}
+
+#btnCancelar {
+
+	margin-left: 50px;
+}
+
+
+/*MODAL*/   
+#seccion{
+    
+
+    z-index: 1;
+    left: 440px;
+    top: 60px;
+   
+}
+
+
+.ocultarSeccion{
+
+    display: none;
+}
+
+
+
+/* inio de estilos del footer*/
+
+
+
+
+/*Inicio: estilos del generales */
+
+.clearFix{
+  clear:both;
+}
+
+/*Fin: estilos del generales */

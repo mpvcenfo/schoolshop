@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Institución</title>
+	<link rel="icon" href="img/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style-h_f.css">
+    <link rel="stylesheet" type="text/css" href="css/Institucion.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header>
+			
+				<a href="home-asistente.html"> <img src="img/logotipo.png"></a>
+
+			<nav>
+				<!-- <a href="home-administrador.html">Instituciones</a>
+				<a href="#">Reportes</a>
+				<a href="registrar-director.html">Directores</a>
+				<a href="listar-director.html">Listar Directores</a>
+				<a href="curso-admin.html">Cursos</a>
+				<a href="#">Encargados</a>
+				<a href="#">Estudiantes</a>
+				<a href="login.html" onclick="cerrarSesion()">Cerrar sesión</a> -->
+
+			</nav>
+			<div class="clearFix"></div>
+		</header>
+
+		<main>
+			<div id="tituloYAgregar">
+				<h1 id="tituloP">Instituciones</h1>
+				<span id="btnAbrirModal"  class="fa fa-plus-square fa-2x"></span>
+			</div>
+
+			<section id="cardsInstitucion">
+					<div id="inst0" class="cardsHome"> 
+							<h3> Cenfotec </h3>
+				
+						 <div class="imagenCard"> 
+							<img src="">
+							 </div>
+						  <span> 
+							"Direccion: Santa Marta" 
+						  </span>
+							  </div>
+			</section>
+						
+			<div id="modal" class="ocultarRegistro">
+				<div id="registarContainer" >
+						<form id="formInstitucion">
+							<span id="formTitulo" >Registrar Institución</span>
+							<div id="btnModDes" class="ocultarRegistro">
+								<span id="btnEdit" class="fa fa-pencil botonEditar"></span>
+								<span id="btnDelete" class="fa fa-trash botonDeshabilitar"></span>
+							</div>
+							<div class='formImagen' >
+								<img id="vista" src="" alt="Maximo 600kb">
+								<input type="file"id="fImg" accept="image/*">
+							
+							</div>
+						
+							<div>
+								<input type="hidden" id="idInst">
+							</div>
+							<div >
+								<label for="txtNombre">Nombre</label>
+								<input type="text" id="txtNombre" placeholder="">
+							</div>
+	
+							<div>
+								<label for="txtDireccion">Direccion fisica</label>
+								<input class="" type="text" id="txtDireccion" placeholder="">
+							</div>
+	
+							<div  class="divCorto">
+								<label for="txtLat">Latitud</label>
+								<input class="inputCorto" type="text" id="txtLat" placeholder="">
+							</div>
+	
+							<div class="divCorto">
+								<label for="txtLon">Longitud</label>
+								<input class="inputCorto" type="text" id="txtLon" placeholder="">
+							</div>
+	
+							
+							<div>
+								<label for="txtNombreContacto">Nombre - Contacto</label>
+								<input class="" type="text" id="txtNombreContacto" placeholder="">
+							</div>
+	
+							<div>
+								<label for="nTelefonoContacto">Telefono - Contacto</label>
+								<input class="" type="text" id="nTelefonoContacto" placeholder="">
+							</div>
+	
+							<div>
+								<label for="txtCorreo">Correo electronico - Contacto</label>
+								<input class="" type="emial" id="txtCorreo" placeholder="">
+							</div>
+	
+							<div  class="divCorto">
+								<label for="nNivelesDesde">Niveles Desde</label>
+								<select class="inputCorto" type="select" id="nNivelesDesde" >
+									<option value="0">Maternal</option>
+									<option value="1">Prekinder</option>
+									<option value="2">Kinder</option>
+									<option value="3">Preparatoria</option>
+									<option value="4">Primero</option>
+									<option value="5">Segundo</option>
+									<option value="6">Tercero</option>
+									<option value="7">Cuarto</option>
+									<option value="8">Quinto</option>
+									<option value="9">Sexto</option>
+									<option value="10">Sétimo</option>
+									<option value="11">Octavo</option>
+									<option value="12">Noveno</option>
+									<option value="13">Décimo</option>
+									<option value="14">Undécimo</option>
+									<option value="15">Duodécimo</option>
+									
+								</select>
+								
+							</div>
+							<div  class="divCorto">
+								<label for="nNivelesHasta">Hasta</label>
+								<select class="inputCorto" type="select" id="nNivelesHasta" >
+									<!-- <option value="0">Maternal</option>
+									<option value="2">Prekinder</option>
+									<option value="3">Kinder</option>
+									<option value="4">Preparatoria</option>
+									<option value="5">Primero</option>
+									<option value="6">Segundo</option>
+									<option value="7">Tercero</option>
+									<option value="8">Cuarto</option>
+									<option value="9">Quinto</option>
+									<option value="11">Sexto</option>
+									<option value="12">Sétimo</option>
+									<option value="13">Octavo</option>
+									<option value="14">Noveno</option>
+									<option value="15">Décimo</option>
+									<option value="16">Undécimo</option>
+									<option value="17">Duodécimo</option> -->
+									
+								</select>
+								
+							</div>
+	
+							<div  class="divCorto">
+								<label for="nSecciones">Secciones por nivel</label>
+								<input  class="inputCorto" type="number" id="nSecciones" min="0" placeholder="">
+							</div>
+	
+						</form>
+						<div id="botones">
+							<input id="btnRegistrar" class="btnFormulario" type="button" value="Registrar">
+							<input id="btnCancelar" class="btnFormulario" type="button" value="Cancelar">
+						</div>
+				</div>
+			</div>
+
+			<div id="confirmar" class="ocultarRegistro"> 
+				<div class="content">
+					<span>Seguro que desea deshabilitar?</span>
+					<div>
+						<input type="button" id="btnSi" value="Si">
+						<input type="button" id="btnNo" value="No">
+					</div>
+				</div>
+			</div>
+				
+		</main>
+				
+				
+		<footer>
+			<div id="menu">
+				<h2>School</h2>
+				<h3>Shop</h3>
+				
+				<nav>
+						<a href="#">Instituciones</a>
+						<a href="#">Reportes</a>
+						<a href="#">Directores</a>
+						<a href="#">Facultad</a>
+						<a href="#">Encargados</a>
+						<a href="#">Estudiantes</a>
+						<a href="login.html" onclick="cerrarSesion()">Cerrar sesión</a>
+			
+				</nav>
+	
+			</div>
+	
+			<div id="contactos">
+	
+				<h1>Contactenos</h1>
+	
+				<span class="fa fa-phone"></span>
+				<h2>+506 2589-5562</h2>
+				<span class="fa fa-envelope-o"></span>
+				<h3>info@schoolshop.com</h3>
+	
+			</div>
+	
+			<div id="redes">
+				<h2>Find us</h2>
+				<span class="fa fa-facebook-official  fa-3x"></span>
+				<span class="fa fa-google-plus-official fa-3x"></span>
+				<span class="fa fa-map fa-3x"></span>
+	
+			</div>
+	
+	
+	
+			<div class="clearFix"></div>
+		</footer>
+
+		<script src="js/logica-comun.js"></script>
+		<script src="js/logica-institucion.js"></script>
+		<script src="js/controlador-institucion.js"></script>
+        
+
+
+	
+
+
+	</body>
+</html>

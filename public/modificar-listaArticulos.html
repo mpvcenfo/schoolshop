@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="imgs/logoSchoolShop.png" type="image/x-icon">
+    <title>School Shop | Lista Articulos/title></title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/tiphography.css">
+    <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/registrar-lista-Articulos.css">
+    <link rel="stylesheet" href="./css/style-home.css">
+</head>
+<body>
+    <header class="column column-2 menu">
+        
+        <section class="row" >
+            <div class="column column-5"> 
+                <img src="imgs/logoSchoolShop_Black.png" alt="Logo School Shop" width="100%">
+            </div>
+            <div  class="column column-7 slogan">
+                <h2>School</h2>
+                <h3>Shop</h3>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="column nav">
+                <nav>
+
+                </nav>
+            </div>
+        </section>
+      
+
+    </header>
+
+    <section class="column column-10">
+       <div class='row menutop'>             <i id="return" class="fa fa-arrow-circle-o-left fa-2x" aria-hidden="true"></i>
+            <nav>
+                <a href="#">Ir a la tienda <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+                <a href="login.html">Cerrar sesión</a>
+                
+            </nav>
+        </div>
+
+        <div class='row main'>
+            <div class="row" id="tituloYAgregar">
+                <h1 id="tituloP">Modificar Lista de Articulos</h1>
+            </div>
+            <div class='row rowForm'>
+                <div  class="column column-5 divForm">
+                    <form id="formulariLista" class="formulario">
+                            
+                        <div class="datos">
+                            <label for="inputpCodigo">Codigo</label>
+                            <input type="text" disabled='true' name="" id="inputpCodigo">
+                            <label for="inputpNombre">Nombre</label>
+                            <input type="text" name="" id="inputpNombre">
+                            <label for="atxtDescripcion">Descripción</label>
+                            <textarea id="atxtDescripcion" cols="30" rows="5"></textarea >
+                        </div>
+        
+                        <div class="seccion">
+                            <label for="seccion">Seccion</label>
+                        
+                            <select id="seccion">
+                                <option value="1" disabled selected="">Seleccione una Sección</option>
+                            </select>
+
+
+                            <label for="nivel">Nivel</label>
+                            <!-- <div ckas="clearFix"></div> -->
+                                <select id="nivel">
+                                    <option value="" disabled selected="">Seleccione un Nivel</option>
+                                    <option value="1">a</option>
+                                    <option value="2">b</option>
+                                </select>
+
+                        </div>
+        
+                        <div class="divBtn">
+                            <input id="btnRegistrarLista" class="btnFormulario"  type="button" value="Guardar">
+                            <input id="btnCancelar" class="btnFormulario"  type="button" value="Cancelar">
+                        </div>
+                                        
+                    </form>
+                </div>
+                <div  class="column column-7">
+                    <div class="search">
+                        <span><i class="fa fa-search fa-2x" aria-hidden="true"></i><input id="filtro" type="text"></span>
+                    </div>
+                    <table class='tablaArticulos' id='inventario'>
+                        <thead>
+                            <tr>
+                                <th class="colSec"> <span class="fa fa-check-square"></span></th>
+                                <th class="colCodigo">Código</th>
+                                <th  class="colNombre">Nombre</th>
+                                <th  class="colDesc">Descripción</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="ocultar" id="modal" >
+            <div class="modal-containeer">
+                <p> Por favor seleccione  una categoría y llene los campos en rojo</p>
+                <button id="btnAceptar">Aceptar</button>
+           </div>
+    </div>
+
+    <div id="msj" class="ocultar">
+        <div class="confirmacion">
+            <span>Se ha modificado correctamente</span>
+            <input class="OK" type="button" value="Aceptar" id="OK">
+        </div>
+    </div>
+
+    <footer>
+        <div class="column column-12">
+            <div class="column column-4"></div>
+            <div class="column column-4"></div>
+            <div class="column column-4"></div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/logica-comun.js"></script>
+    <script src="js/logica-modificar-lista.js"></script>
+    <script src="js/controlador-modificar-lista.js" ></script>
+</body>
+</html> 

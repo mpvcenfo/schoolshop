@@ -1,0 +1,334 @@
+/*TITULO Y BOTON*/
+
+#tituloYAgregar{
+    background-color: rgba(0, 0, 0, 0.212);
+    padding: 20px;
+
+}
+
+#tituloP{
+    font-size: 45px;
+    display:inline-block; 
+    color: rgb(28, 109, 145);
+}
+
+/*#btnAbrirModal{
+    color: rgb(28, 109, 145);
+    float: right;
+   
+}
+
+#btnAbrirModal:hover{
+    cursor: pointer;
+    color: rgb(0, 179, 255);
+   
+}
+*/
+/* FIN TITULO Y BOTON*/
+
+
+/*inicio formulario*/
+/*#registarContainer{
+    height: 630px;
+    /* height: auto; */
+  /*  width: 460px; 
+    background: rgb(194, 245, 128);
+    /* border:2px solid red;  */
+    /*border-radius: 10px;
+    position: fixed;
+    margin-left: 500px;
+    top: 70px;
+    
+}
+
+
+#registarContainer span{
+    font-size: 24px;
+    margin-top: 10px;
+    display: inline-block;
+
+}
+*/
+/*#formInstitucion{
+    /* border:2px solid red; */
+   /* margin:10px;
+    margin-bottom: 0px;
+    padding-left: 14px;
+}
+
+#formTitulo{
+    margin-left: -10px;
+}
+
+#formInstitucion div{
+    margin-bottom: 10px;
+}
+
+
+#formInstitucion input{
+    width: 396px;
+}
+
+
+#formInstitucion label{
+    display: block;
+    padding: 2px;
+}
+
+.formImagen{
+    height: 150px;
+    padding-left: 240px;
+    position: relative;
+    top: -20px;
+    left: 0px;
+}
+
+.formImagen img{
+    height: 100%;
+    width: 100%;
+}
+
+
+#formInstitucion .formImagen input{
+    width: 185px;
+    background: rgba(6, 175, 185, 0.34);
+
+}
+
+
+#formInstitucion .inputCorto{
+    width: 180px;
+}
+
+#formInstitucion .divCorto{
+    display: inline-block;
+    margin-right: 27px;*/
+}
+/*Fin Formulario*/
+
+/*INICIO BOTONES*/
+/*#botones{
+    padding-left: 74px;
+}
+
+
+
+.btnFormulario{
+    border:1px solid black;
+    border-radius: 5px;
+    background: rgb(140, 248, 0);
+    padding: 8px;
+    width: 120px;
+    font-weight: bold;
+    margin-right:60px;
+}
+
+.btnFormulario:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 1px  black;
+    color:rgb(0, 138, 192);
+}
+
+
+.botonDeshabilitar {
+    color: black;
+    background: red;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.botonEditar {
+    color: black;
+    background: #3498db;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+#formInstitucion .botonDeshabilitar:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+#formInstitucion .botonEditar:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+#btnModDes{
+    position: fixed;
+    z-index: 1;
+}
+/*FIN BOTONES*/
+
+
+/*cards listar*/
+
+/* DivPrincipal, este esta creado en HTML a mano, es donde guarda todos los cards */
+#cardsAsistente{
+    height: 900px;
+    overflow: auto;
+    margin-bottom: 10px;
+    padding-left: 65px;
+}
+/* esta clase se utiliza en el div que guarda el card como tal */
+.cardsHome{
+    width: 250px;
+    /* height: auto; */
+    height: 300px;
+    background-color:rgb(123, 213, 6);
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    margin: 50px;
+    overflow: hidden;
+}
+
+/* da estilo al header del card */
+.cardsHome h3{
+    font-size: 22px;
+    margin-top: 10px;
+
+}
+
+
+.cardsHome a{
+
+    text-decoration: none;
+
+
+}
+
+
+/* este es el div donde guarda la imagen, en el caso que se coloque in Icon de fontAwsome le pone color  */
+.cardsHome .imagenCard{
+    color:rgb(0, 120, 218);
+    height: 130px;
+    width: 200px;
+    margin: auto;
+}
+
+/* este indica que cualquier imagen que este dentro del div de imagen mencionado anterior sea del tama;o correcto */
+.cardsHome .imagenCard img{
+    height: 100%;
+    width: 100%;
+}
+
+.miFoto{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* este es el estilo para todos los elementos SPAN, por ejemplo seria la informacion, el nombre, apellido, y asi... */
+.cardsHome  span{
+    text-align: left;
+    padding-left: 10px;
+    display: block;
+    padding-top: 10px;
+}
+/* efecto hover */
+.cardsHome:hover{
+    cursor:pointer;
+    background-color:rgb(140, 248, 0);
+}
+
+*efectos de los botones de modificar*/
+
+.centrar-botones{
+
+    text-align: center;
+    margin-left: 50px;
+
+}
+
+
+#btnModificar {
+    margin-left: 150px;
+    margin-top: 30px;
+
+}
+
+
+#btnCancelar{
+    
+ margin-left: 0px;
+ margin-top: 30px;
+
+}
+
+
+.ocultar{
+    display: none;
+}
+
+
+/*boton de  basurero*/
+
+
+
+.botonDeshabilitar {
+    color: black;
+    background: red;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.botonEditar {
+    color: black;
+    background: #3498db;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.botonDeshabilitar:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+
+/*fin cards listar*/
+
+
+
+
+
+/*MODAL*/   
+/*#modal{
+    animation-name: ingresar;
+    animation-duration: 0.4s;
+    background-color: rgba(0, 0, 0, 0.37);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+
+.mostrarRegistro{
+    display: block;
+
+}
+
+.ocultarRegistro{
+    display: none;
+}*/
+
+@keyframes ingresar {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+/*Modal*/
+
+
+/*clases*/
+.warning{
+    color:red;
+    border:1px solid red;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="imgs/logoSchoolShop.png" type="image/x-icon">
+    <title>School Shop | Página de inicio</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/tiphography.css">
+    <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/Citas.css">
+    <link rel="stylesheet" href="./css/style-home.css">
+</head>
+<body>
+    <header class="column column-2 menu">
+        
+        <section class="row" >
+            <div class="column column-5"> 
+                <img src="imgs/logoSchoolShop_Black.png" alt="Logo School Shop" width="100%">
+            </div>
+            <div  class="column column-7 slogan">
+                <h2>School</h2>
+                <h3>Shop</h3>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="column nav">
+                <nav>
+
+                </nav>
+            </div>
+        </section>
+      
+
+    </header>
+
+    <section class="column column-10">
+       <div class='row menutop'>             <i id="return" class="fa fa-arrow-circle-o-left fa-2x" aria-hidden="true"></i>
+            <nav>
+                <a href="#">Ir a la tienda <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+                <a href="login.html">Cerrar sesión</a>
+                
+            </nav>
+        </div>
+
+        <div class='row main'>
+            <div id="tituloYAgregar">
+				<h1 id="tituloP">Citas</h1>
+			</div>
+
+			<section id="tablaContainer">
+				<table id="tablaCitas">
+					<thead>
+						<th class="colEdit">Cedula</th>
+						<th class="colNombre">Nombre</th>
+						<th class="colCorreo">Correo</th>
+						<th class="colFechaPedido">Fecha pedido</th>
+						<th class="colFechaProgramada">Fecha programada</th>
+						<th class="colCita"><span class="fa fa-clock-o"> </th>
+					</thead>
+
+					<tbody>
+
+					</tbody>	
+				</table>
+			</section>
+        </div>
+    </section>
+
+    <footer>
+        <div class="column column-12">
+            <div class="column column-4"></div>
+            <div class="column column-4"></div>
+            <div class="column column-4"></div>
+        </div>
+    </footer>
+
+    <div id="registarContainer" class="ocultar">
+        <form id="formCita">
+            <span id="formTitulo" >Registrar Cita</span>
+            <!-- <div id="btnModDes" class="ocultarRegistro">
+                <span id="btnEdit" class="fa fa-pencil botonEditar"></span>
+                <span id="btnDelete" class="fa fa-trash botonDeshabilitar"></span>
+            </div> -->
+            
+            <div class='formImagen' >
+                    <img id="vista" src="img/calendar.png" alt="Imagen...">
+                
+            </div>
+            <div>
+                <label for="idCita" >Cedula</label>
+                <output type="text" class="inputCorto" id="idCita" disabled>
+            </div>
+            <div >
+                <label for="txtNombre">Nombre</label>
+                <output type="text" class="inputCorto" id="txtNombre" placeholder="">
+            </div>
+
+            <div>
+                <label for="dateFechaProgramada">Fecha Programada</label>
+                <input  type="datetime-local" class="inputCorto" id="dateFechaProgramada" placeholder="">
+            </div>
+
+            
+
+        </form>
+        <div id="botones">
+            <input id="btnRegistrar" class="btnFormulario" type="button" value="Registrar">
+            <input id="btnCancelar" class="btnFormulario" type="button" value="Cancelar">
+        </div>
+</div>
+      
+ 
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!--Proyecto-->
+    <script src="js/logica-comun.js"></script>
+    <script src="js/logica-Citas.js"></script>
+    <script src="js/controlador-Citas.js"></script>
+</body>
+</html> 

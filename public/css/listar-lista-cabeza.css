@@ -1,0 +1,556 @@
+/*TITULO Y BOTON*/
+
+#tituloYAgregar{
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 6px;
+    position: fixed;
+    width: 1270px;
+    z-index: 1;
+
+}
+
+
+#tituloP{
+    font-size: 28px;
+    display:inline-block; 
+    color: rgb(255, 255, 255);
+}
+
+#btnAbrirModal{
+    color: rgb(255, 255, 255);
+    float: right;
+   
+}
+
+#btnAbrirModal:hover{
+    cursor: pointer;
+    color: rgb(0, 179, 255);
+   
+}
+
+
+/* FIN TITULO Y BOTON*/
+
+/*INICIO TABLA*/
+.tabla{
+    height: 500px;
+}
+
+#tablaEncabezados{
+    margin: auto;
+    margin-top: 60px;
+    display: inline-block;
+    
+}
+
+#tablaEncabezados tbody{
+    display: inline-block;
+    width: auto;
+    height: 520px;
+    overflow-y: auto;
+}
+
+
+#tablaEncabezados  tr:nth-child(even) {
+    background-color: rgb(165, 134, 109);
+}
+#tablaEncabezados tr:nth-child(odd) {
+    background-color: rgb(125, 101, 82);
+}
+#tablaEncabezados th {
+    color: white;
+    background-color: rgb(199, 72, 28);
+}
+#tablaEncabezados tr {
+    font-weight: 500;
+}
+
+table,th,td  {
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.colEdit{
+    width: 65px;
+}
+
+.colNombre{
+    width: 170px;
+}
+
+.colDescri{
+    width: 400px;
+}
+
+.colLista{
+    width: 100px;
+}
+
+/*FIN TABLA*/
+
+
+/*detalle*/
+
+#tablaDetalle{
+    margin: auto;
+    margin-top: 60px;
+    padding-right: 20px;
+    display: inline-block;
+    
+}
+
+
+#tablaDetalle tbody{
+    display: inline-block;
+    width: auto;
+    height: 520px;
+    overflow-y: auto;
+}
+
+#tablaDetalle caption{
+    font-weight: 500;
+    background: rgb(80, 61, 46);
+    color: rgb(213, 75, 26);
+    padding: 3px;
+    font-size: 18px;
+}
+
+
+
+
+
+#tablaDetalle  tr:nth-child(even) {
+    background-color: rgb(165, 134, 109);
+}
+#tablaDetalle tr:nth-child(odd) {
+    background-color: rgb(125, 101, 82);
+}
+#tablaDetalle th {
+    color: white;
+    background-color: rgb(199, 72, 28);
+}
+#tablaDetalle tr {
+    font-weight: 500;
+}
+
+/*detalle*/
+
+/*inicio formulario*/
+#registarContainer{
+    height: 355px;
+    /* height: auto; */
+    width: 300px;
+    background: rgb(97, 86, 63);
+    border: 7px solid #3e2816;
+    border-radius: 10px;
+    position: fixed;
+    margin-left: 724px;
+    top: 80px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+#registarContainer span{
+    font-size: 24px;
+    margin-top: 10px;
+    display: inline-block;
+
+}
+
+
+
+
+#formCurso{
+    /* border:2px solid red; */
+    margin:10px;
+    margin-bottom: 0px;
+}
+
+#formTitulo{
+    margin-left: -10px;
+}
+
+#formCurso div{
+    margin-bottom: 10px;
+}
+
+
+#formCurso input{
+    width: 396px;
+}
+
+
+#formCurso label{
+    display: block;
+    padding: 2px;
+}
+
+.formImagen{
+    height: 100px;
+    width: 100px;
+    padding-left: 90px;
+}
+
+.formImagen img{
+    height: 100%;
+    width: 100%;
+}
+
+
+#formCurso .formImagen input{
+    width: 185px;
+    background: rgba(6, 175, 185, 0.34);
+
+}
+
+
+#formCurso .inputCorto{
+    width: 180px;
+}
+
+#formCurso .idCurso{
+    width: 100px;
+}
+
+#formCurso .divCorto{
+    display: inline-block;
+    margin-right: 27px;
+}
+/*Fin Formulario*/
+
+/*INICIO BOTONES*/
+#botones{
+    padding-left: 30px;
+}
+
+
+
+.btnFormulario{
+    border:1px solid black;
+    border-radius: 5px;
+    background: rgb(126, 45, 18);
+    padding: 8px;
+    width: 90px;
+    font-weight: bold;
+    margin-right:20px;
+}
+
+.btnFormulario:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 1px  black;
+    color:rgb(161, 161, 161);
+}
+
+
+.botonDeshabilitar {
+    color: black;
+    background: red;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.botonEditar {
+    color: black;
+    background: #3498db;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.botonDeshabilitar:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.botonEditar:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.btndetalle{
+    color:white;
+    font-weight: 500;
+}
+
+.btndetalle:hover{
+    cursor: pointer;
+    color: rgb(51, 61, 199);
+}
+
+/*FIN BOTONES*/
+
+
+/*cards listar*/
+
+/* DivPrincipal, este esta creado en HTML a mano, es donde guarda todos los cards */
+.tablaContainer{
+    height: 400px;
+    overflow: auto;
+    margin-bottom: 10px;
+    padding-left: 65px;
+    display: table;
+    margin: auto;
+}
+
+
+
+/* esta clase se utiliza en el div que guarda el card como tal */
+.cardsHome{
+    width: 250px;
+    /* height: auto; */
+    height: 300px;
+    background-color:rgb(123, 213, 6);
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    margin: 50px;
+    overflow: hidden;
+}
+
+/* da estilo al header del card */
+.cardsHome h3{
+    font-size: 22px;
+    margin-top: 10px;
+
+}
+/* este es el div donde guarda la imagen, en el caso que se coloque in Icon de fontAwsome le pone color  */
+.cardsHome .imagenCard{
+    color:rgb(0, 120, 218);
+    height: 130px;
+    width: 200px;
+    margin: auto;
+}
+
+/* este indica que cualquier imagen que este dentro del div de imagen mencionado anterior sea del tama;o correcto */
+.cardsHome .imagenCard img{
+    height: 100%;
+    width: 100%;
+}
+
+/* este es el estilo para todos los elementos SPAN, por ejemplo seria la informacion, el nombre, apellido, y asi... */
+.cardsHome  span{
+    text-align: left;
+    padding-left: 10px;
+    display: block;
+    padding-top: 10px;
+}
+/* efecto hover */
+.cardsHome:hover{
+    cursor:pointer;
+    background-color:rgb(140, 248, 0);
+}
+
+
+
+/*fin cards listar*/
+
+#filtro{
+    width: 330px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: width 0.4s ease-in-out;
+    padding: 4px;
+    vertical-align: super;
+    margin-left: 5px;
+}
+
+#filtro:focus{
+    width: 330px;
+    font-size: 18px;
+    vertical-align: top;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.search{
+    margin-top: 3px;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.search span{
+    color: white;
+    padding-top: 3px;
+    font-size: 14px;
+
+}
+
+
+
+/*MODAL*/   
+.modal{
+    animation-name: ingresar;
+    animation-duration: 0.4s;
+    background-color: rgb(32, 73, 39);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    /* width: 100%;
+    height: 100% */
+}
+
+
+/* .mostrarRegistro{
+    display: block;
+
+} */
+
+.ocultar{
+    display: none;
+}
+
+@keyframes ingresar {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+/*Modal*/
+
+
+/*clases*/
+.warning{
+    color:red;
+    border:1px solid red;
+}
+
+
+#msj{
+    animation-name: ingresar;
+    animation-duration: 0.4s;
+    background-color: rgba(0, 0, 0, 0.37);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#msj1{
+    animation-name: ingresar;
+    animation-duration: 0.4s;
+    background-color: rgba(0, 0, 0, 0.37);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.aviso{
+    top: 260px;
+    left: 615px;
+    position: fixed;
+    width: 400px;
+    border: 6px solid rgb(51, 39, 29);
+    padding: 26px;
+    align-content: center;
+    font-size: 24px;
+    font-weight: 500;
+    background: rgba(134, 47, 16, 0.77);
+    border-radius: 10px;
+   
+}
+
+.aviso span{
+    display: block;
+    width: 600px;
+}
+.confirmacion{
+    top: 260px;
+    left: 615px;
+    position: fixed;
+    width: 400px;
+    border: 6px solid rgb(51, 39, 29);
+    padding: 26px;
+    align-content: center;
+    font-size: 24px;
+    font-weight: 500;
+    background: rgb(5, 135, 137);
+    border-radius: 10px;
+   
+}
+
+.confirmacion span{
+    display: block;
+    width: 600px;
+}
+
+
+.OK{
+    color: rgb(1, 18, 19);
+    background: rgb(143, 136, 122);
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px;
+    width: 90px;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: 150px;
+    display: inline-block;
+}
+
+.OK:hover{
+    cursor: pointer;
+    background: rgb(82, 77, 69);
+}
+.confirmar{
+    color: rgb(1, 18, 19);
+    background: rgb(143, 136, 122);
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px;
+    width: 90px;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: 150px;
+    display: inline-block;
+}
+
+.confirmar:hover{
+    cursor: pointer;
+    background: rgb(82, 77, 69);
+}
+.confirmacion .NO{
+    color: rgb(1, 18, 19);
+    background: rgb(143, 136, 122);
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px;
+    width: 90px;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.confirmacion .NO:hover{
+    cursor: pointer;
+    background: rgb(82, 77, 69);
+}
+
+.aviso .NO{
+    color: rgb(1, 18, 19);
+    background: rgb(143, 136, 122);
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px;
+    width: 90px;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.aviso .NO:hover{
+    cursor: pointer;
+    background: rgb(82, 77, 69);
+}

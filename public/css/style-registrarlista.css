@@ -1,0 +1,476 @@
+
+
+
+/*Inicio main lista*/
+#txtFiltro, label{
+  text-align: right;
+   margin-right: 100px;
+   
+   margin-left: 40px;
+}
+
+#btnAgregar  {
+    width: 70px;
+    height: 70px;
+    text-align: right;
+    float: right;
+
+}
+.modal{
+    display: none; /* lo esconde por defecto */
+    position: fixed;
+    z-index:1 ; 
+    left: 0;
+    top: 0;
+    
+    width: 100%;
+    height: 100%; 
+    overflow: auto; /* Habilite desplazamiento si es necesario
+ */ 
+    animation-name: mostrar;
+    animation-duration: 0.4s;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+/*clases para el formulario js*/
+
+@keyframes mostrar {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+.ocultar{
+    display: none;
+}
+
+.error{
+    border: 2px solid #e74c3c
+}
+/*clases para el formulario js*/
+
+.agregarista-content{
+  background: rgb(194, 245, 128);
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 590px; 
+    height: 380px;
+
+}
+.agregarista-content h2{
+     text-align: left;
+     margin-top: 10px;
+     margin-left: 20px;
+}
+#seprovedor{
+    text-align: left;
+}
+.selectimage{
+    float: right;
+}
+.selectimage img{
+    text-align: right;
+ 
+}
+.inputs{
+    float: left;
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 60px;
+}
+
+.inputs input {
+    margin-top: 10px;
+}
+
+.inputs textarea {
+    margin-top: 10px;
+}
+.nivel{
+   margin-top: 50px; 
+   margin-left: 100px;
+}
+.seccion{
+       margin-top: 50px; 
+   
+}
+.agregarista-content input{
+    display: block;
+    margin-right:  40px;
+    text-align: right;
+}
+.atxtDescripcion{
+       margin-top: 50px; 
+    text-align: left;
+}
+.atxtDescripcion textarea  {
+      height: 60px;
+}
+.modal .Titulo{
+float:left;
+margin-left: 250px; 
+}
+
+/*boton span*/
+
+.btnCerrar{
+ color: #aaa; 
+     margin-bottom:  65px;
+     text-align: right;
+    padding-left: 40px;
+    color: #fff;
+  background: rgb(140, 248, 0);
+    border-radius: 5px;
+    padding: 5px 16px 6px;
+    display:block;
+    margin-right:65px;
+    margin-top: 80px;
+ 
+
+}
+.btnCerrar:hover {
+
+   color: black;
+     cursor: pointer;
+    box-shadow: 1px 1px 1px  black;
+    color:rgb(0, 138, 192);
+    cursor: pointer;
+ 
+}
+.btnAbrir{
+     display: block;
+       float: left;
+    margin-top: 80px;
+    text-align: center;
+
+    margin: auto;
+ 
+    color: #fff;
+ background: rgb(140, 248, 0);
+    border-radius: 5px;
+    padding: 5px 16px 6px;
+    margin-left: 60px;
+   
+}
+.btnAbrir:hover{
+    color: black;
+        cursor: pointer;
+    box-shadow: 1px 1px 1px  black;
+    color:rgb(0, 138, 192);
+    cursor: pointer;
+}
+/* Botones de editar y deshabilitar*/
+.botonEditar{
+   color:#fff;
+  background:#2980b9;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.botonDeshabilitar{
+
+        color: black;
+    background: red;
+    padding: 5px;
+    border-radius: 5px
+}
+
+.botonEditar:hover, .botonDeshabilitar:hover{
+    cursor: pointer;
+}
+.botonEditar:hover{
+    background:#3498db; 
+}
+.botonDeshabilitar:hover{
+    background:#e74c3c;
+}
+
+.btnArticulos{
+ color: #aaa; 
+     margin-bottom:  65px;
+     text-align: right;
+    padding-left: 40px;
+    color: #fff;
+  background: rgb(140, 248, 0);
+    border-radius: 5px;
+    padding: 5px 16px 6px;
+    display:block;
+     margin-left: 360px;
+    margin-top: -180px;
+       
+ 
+
+}
+.btnArticulos:hover {
+
+   color: black;
+        cursor: pointer;
+    box-shadow: 1px 1px 1px  black;
+    color:rgb(0, 138, 192);
+    cursor: pointer;
+ 
+}
+/**/
+#tituloYAgregar{
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 6px;
+    width: 1100px;}
+
+    #tituloP{
+        font-size: 25px;
+        display:inline-block; 
+        color: rgb(255, 255, 255);}
+
+    #tituloYAgregar span {
+         font-size: 20px;}
+
+
+
+#btnAgregar{
+    color: rgb(255, 255, 255);
+    float: right;
+    font-size: 20px;}
+
+  #btnAgregar:hover{
+    cursor: pointer;
+    color: rgb(0, 179, 255);}
+
+
+
+/*Inicio tabla lista generales*/
+
+#tblLista{
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+
+#tblLista  tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.562);
+}
+#tblLista tr:nth-child(odd) {
+}
+#tblLista th {
+    color: black;
+    background: rgba(0, 0, 0, 0.562);
+    /* border: 1px solid black;
+    border-bottom: 0px; */
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+  
+}
+
+table,th,td  {
+    border-collapse: collapse;
+    padding: 15px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+#tblLista{
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+
+
+
+.colCodigo{
+    width: 100px;
+   
+}
+
+.colNombre{
+    width: 150px;
+}
+
+.colDescripcion{
+    width: 260px;
+}
+
+.colSeccion{
+    width: 100px;
+}
+.colnivel{
+    width: 150px;
+}
+.colEdit{
+   width: 100px;
+}
+
+
+/*FIN TABLA*/
+/*Fin tabla lista generales*/
+
+/*clases generales*/
+.clearFix{
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    
+        width: 1200px;
+        height: 130px;
+        margin-top: 800px;
+         
+     
+    }
+    
+    #menu {
+        width: 400px;
+        height:130px;
+        float: left;
+        background-color:#a9d86b;
+        
+    }
+    
+    #menu h2{
+        font-size: 20px;
+        color: #000;
+        background-color: white;
+        width: 67px;
+        height:23px;
+        border-radius: 10px 0px 0px 10px;
+        margin-top: 5px;
+        margin-left: 16px;
+        display: inline-block;
+        
+    }
+    
+    #menu h3{
+        font-size: 20px;
+        color: white;
+        background-color: #000;
+        width: 56px;
+        height:23px;
+        border-radius: 0px 10px 10px 0px;
+        display: inline-block;  
+    
+    }
+
+    #menu nav a{
+        display: block;
+        padding-top: 5px;
+        border:none;
+        text-decoration: none;
+        padding-left: 30px;
+        color:Black;
+        display: inline-block;
+    }
+
+    #menu nav a:hover{
+        color:rgb(28, 109, 145);
+    }
+    
+    #contactos {
+        width:390px;
+        height:116px;
+        float: left;
+        background-color:#c2f580;
+        padding-top: 14px;
+        padding-left: 10px;
+    
+    }
+    
+    #contactenos h1{
+        font-size: 14px;
+        color: #000;
+        width: 350px;
+        height:17px;
+        padding-top: 10px;
+        
+        
+    }
+    
+    footer span{
+        width: 34px;
+        height: 34px;
+        display: block;
+        padding-top: 5px;
+    
+    }
+
+
+    #contactos h1{
+        font-size: 22px;
+            
+    }
+    
+    
+    #contactos h2{
+        font-size: 18px;
+        width: 240px;
+        height:21px;
+        float: right;
+        padding-top: 5px;
+        margin-right: 110px;
+            
+    }
+    
+    
+    #contactos h3{
+        font-size: 18px;
+        width: 121px;
+        height:21px;
+        display: inline;
+        
+    }
+    
+    #redes{
+        width: 400px;
+        height:130px;
+        float: left;
+        background-color:#a9d86b;
+    }
+    
+    #redes h2{
+        font-size: 22px;
+        color: #000;
+        width: 350px;
+        height:17px;
+        padding-top: 10px;
+        padding-left: 10px;
+    
+    }
+    
+    #redes span{
+       color: rgb(28, 109, 145);
+        margin-left: 70px;
+       padding-top: 25px;
+    }
+ 
+    
+/*clases generales*/
+.clearFix{
+    clear: both;
+
+}
+
+.error{
+    border: 2px solid #e74c3c
+}
+.ocultarAgregar{
+     display: none;
+}

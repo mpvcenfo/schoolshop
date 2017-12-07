@@ -1,0 +1,91 @@
+main {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+main h2 {
+    font-size: 24px;
+}
+
+#divMensaje {
+    margin: 10px 500px;
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;   
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.ocultar {
+    visibility: hidden;
+}
+  
+.divError {
+    background: #ff0000;
+
+}
+  
+.divCorrecto {
+    background: #b5ff4e;
+}
+
+#frmLogin {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 37px 224px;
+    width: 770px;
+    box-shadow: 10px 10px 10px black;
+    border: 6px solid #503d2e;
+    border-radius: 10px;
+    background: rgb(50, 157, 162);
+}
+
+.campo {
+    margin: 50px 150px;
+    width: 600px;
+    height: 40px;
+}
+
+.campo input {
+    font-size: 16px;
+}
+
+.campoError {
+    border: 1px solid #eb1717;
+}
+
+#btnLogin{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 25px 300px;
+    font-size: 16px;
+    background-color: rgb(180, 109, 53);
+    border-color: rgb(145, 142, 138);
+}
+
+#btnLogin:hover{
+    font-weight: 600;
+    background-color: rgb(138, 83, 42);
+    cursor: pointer;
+}
+
+
+label {
+    margin-right: 50px;
+}
+
+#txtEmail {
+    width: 300px;
+    height: 30px;
+}
+
+#txtPassword{
+    width: 300px;
+    height: 30px;
+    font-size: 30px;
+}
+
