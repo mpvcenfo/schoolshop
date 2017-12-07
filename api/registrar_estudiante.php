@@ -33,8 +33,9 @@ if(isset($pestudiante)){
     $pinstitucion = $pestudiante['institucion'];
     $pnivel = $pestudiante['nivel'];
     $pseccion = $pestudiante['seccion'];
+    $pcedulaEncargado = $pestudiante['cedulaEncargado'];
 
-$sentencia_sql = "CALL pa_registrar_estudiante('$pidentificacion', '$pprimerNombre', '$psegundoNombre', '$pprimerApellido', '$psegundoApellido', '$ptelefonoPersonal', '$pfechaNacimiento', '$pdireccion', '$ptelefonoResidencia', '$pgenero', '$pgrupoSanguineo', '$pdonador', '$pimagen', '$pbeca', '$pnombreContacto1', '$pparentescoContacto1', '$ptelefonoContacto1', '$pnombreContacto2', '$pparentescoContacto2', '$ptelefonoContacto2', '$pnombreContacto3', '$pparentescoContacto3', '$ptelefonoContacto3', '$pcondicionMedica', '$pcomprobante', '$pinstitucion', '$pnivel', '$pseccion')";
+$sentencia_sql = "CALL pa_registrar_estudiante('$pidentificacion', '$pprimerNombre', '$psegundoNombre', '$pprimerApellido', '$psegundoApellido', '$ptelefonoPersonal', '$pfechaNacimiento', '$pdireccion', '$ptelefonoResidencia', '$pgenero', '$pgrupoSanguineo', '$pdonador', '$pimagen', '$pbeca', '$pnombreContacto1', '$pparentescoContacto1', '$ptelefonoContacto1', '$pnombreContacto2', '$pparentescoContacto2', '$ptelefonoContacto2', '$pnombreContacto3', '$pparentescoContacto3', '$ptelefonoContacto3', '$pcondicionMedica', '$pcomprobante', '$pinstitucion', '$pnivel', '$pseccion', '$pcedulaEncargado')";
 
 $result = $conexion->query($sentencia_sql);
 
