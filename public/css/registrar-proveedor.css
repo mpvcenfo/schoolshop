@@ -1,0 +1,109 @@
+/* inicio de estilos del main*/
+
+main{
+    
+        width: 1200px;
+        min-height: 920px;
+        margin: 5px;
+    
+}
+
+/*inicia estilos validacion*/ 
+
+.bordeError{
+    border: 2px solid #e74c3c;
+}
+
+#mensajeA{
+    height: 25px;
+}
+
+.ocultar{
+    visibility: hidden;
+}
+
+.divError{
+    background:#e74c3c;
+}
+
+.divCorrecto{
+
+    background: #2ecc71;
+}
+
+/* fin de la validacion */
+
+
+/* inicio de estilos formulario */
+
+.frmRegistrar {
+    margin-top: 50px;
+}
+
+.frmRegistrar label{
+    font-size: 16px;
+    margin-left: 100px;
+    display: block;
+}
+
+.frmRegistrar input{
+    margin-left: 100px;
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+/*inicio estilos de columna centro*/
+
+.centro h2{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.centro label{
+    font-size: 16px;
+    margin-left: 0px;
+    display: block;
+}
+
+.centro input{
+    margin-left: 0px;
+    margin-bottom: 20px;
+    height: 20px;
+}
+
+/*inicio de botones*/
+
+.btnFormulario{
+    border:1px solid black;
+    border-radius: 5px;
+    background: rgb(5, 135, 137);
+    padding: 8px;
+    width: 120px;
+    font-weight: bold;
+}
+
+.btnFormulario:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 1px  black;
+    color:rgb(0, 138, 192);
+}
+
+#btnRegistrar {
+    margin-top: 150px;
+}
+
+#btnCancelar {
+    margin-left: 50px;
+}
+
+/*Inicio: estilos del generales */
+
+.clearFix{
+  clear:both;
+}
+
+/*Fin: estilos del generales */
