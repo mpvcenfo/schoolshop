@@ -46,43 +46,51 @@
                     <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
                 </a>
                 <a href="login.html">Cerrar sesión</a>
-
             </nav>
         </div>
 
         <div class='row main'>
-
             <div class="column column-4 centro">
-
+                <h2>Registrar proveedor</h2>
                 <form id="frmRegistrar" class="centro">
-                    <h2>Registrar proveedor</h2>
-
+                    <div id="mensajeError"></div>
                     <div id="fieldCedula">
                         <label for="txtCedula">Cédula jurídica</label>
                         <input type="text" id="txtCedula">
                     </div>
-                    <div class="clearFix"></div>
-
                     <div id="fieldNombre">
                         <label for="txtNombre">Nombre de proveedor</label>
                         <input type="text" id="txtNombre">
                     </div>
-
                     <div id="fieldTelefono">
                         <label for="txtTelefono">Teléfono de contacto</label>
                         <input type="text" id="txtTelefono">
                     </div>
-
                     <div id="fieldCorreo">
-                            <label for="txtCorreo">Correo electrónico</label>
-                            <input type="text" id="txtTelefono">
+                        <label for="txtCorreo">Correo electrónico</label>
+                        <input type="text" id="txtCorreo">
                     </div>
-
                     <div id="fieldEncargado">
-                            <label for="txtEncargado">Nombre de contacto</label>
-                            <input type="text" id="txtEncargado">
+                        <label for="txtEncargado">Nombre de contacto</label>
+                        <input type="text" id="txtEncargado">
                     </div>
-
+                    <div id="fieldCategorias">
+                        <h3>Categorías</h3>
+                        <label for="checkBolsos">Bolsos</label>
+                        <input type="checkbox" id="checkBolsos" value="0">
+                        <label for="checkLibros">Libros</label>
+                        <input type="checkbox" id="checkLibros" value="1">
+                        <label for="checkUniSport">Uniformes deportivos</label>
+                        <input type="checkbox" id="checkUniSport" value="2">
+                        <label for="checkArte">Arte</label>
+                        <input type="checkbox" id="checkArte" value="3">
+                        <label for="checkCuadernos">Cuadernos</label>
+                        <input type="checkbox" id="checkCuadernos" value="4">
+                        <label for="checkUniFormal">Uniformes formales</label>
+                        <input type="checkbox" id="checkUniFormal" value="5">
+                        <label for="checkHerramientas">Herramientas</label>
+                        <input type="checkbox" id="checkHerramientas" value="6">
+                    </div>
                     <div id="botones">
                         <button class="btnFormulario" type="button" id="btnRegistrar">Registrar</button>
                         <a href="#">
@@ -90,27 +98,23 @@
                         </a>
                     </div>
                 </form>
-
                 <div class="clearFix"></div>
-
             </div>
 
-
-
             <footer>
-                <div class="column column-12">
-                    <div class="column column-4"></div>
-                    <div class="column column-4"></div>
-                    <div class="column column-4"></div>
+                <div class="column column-12 ">
+                    <div class="column column-4 "></div>
+                    <div class="column column-4 "></div>
+                    <div class="column column-4 "></div>
                 </div>
             </footer>
 
-            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="js/jquery-3.2.1.min.js "></script>
             <script src='https://cdn.jsdelivr.net/jquery.cloudinary/1.0.18/jquery.cloudinary.js' type='text/javascript'></script>
-            <script src="https://widget.cloudinary.com/global/all.js" type="text/javascript"></script>
-            <script src="js/logica-comun.js"></script>
-            <script src="js/logica-registrar-proveedor.js"></script>
-            <script src="js/controlador-registrar-proveedor.js"></script>
+            <script src="https://widget.cloudinary.com/global/all.js " type="text/javascript "></script>
+            <script src="js/logica-comun.js "></script>
+            <script src="js/logica-registrar-proveedor.js "></script>
+            <script src="js/controlador-registrar-proveedor.js "></script>
 </body>
 
 </html>

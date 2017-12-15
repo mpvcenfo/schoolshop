@@ -1,11 +1,9 @@
 /* inicio de estilos del main*/
 
 main{
-    
-        width: 1200px;
-        min-height: 920px;
-        margin: 5px;
-    
+    width: 1200px;
+    min-height: 920px;
+    margin: 5px;
 }
 
 /*inicia estilos validacion*/ 
@@ -14,7 +12,7 @@ main{
     border: 2px solid #e74c3c;
 }
 
-#mensajeA{
+#mensajeError{
     height: 25px;
 }
 
@@ -27,7 +25,6 @@ main{
 }
 
 .divCorrecto{
-
     background: #2ecc71;
 }
 
@@ -50,6 +47,10 @@ main{
     margin-left: 100px;
     margin-bottom: 10px;
     height: 20px;
+}
+
+.checkCategoria {
+    display: inline-block;
 }
 
 /*inicio estilos de columna centro*/
@@ -93,7 +94,7 @@ main{
 }
 
 #btnRegistrar {
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 #btnCancelar {
@@ -103,7 +104,7 @@ main{
 /*Inicio: estilos del generales */
 
 .clearFix{
-  clear:both;
+    clear: both;
 }
 
 /*Fin: estilos del generales */
